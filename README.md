@@ -1,23 +1,24 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`Analise de desenvolvimento sistemas`
 
-`DISCIPLINA`
+`Eixo 1 - Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 11 - 2023/1`
 
-`SEMESTRE`
+`01/2023`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Julia Chaves Dutra
+* Sandro Shayne Dutra
+* Pedro Celso Mendes
+* Thiago Singulano Machado
+* Dimitri Oliveira Novaes Santos
 
 ## Orientador
 
-* Nome completo do professor 1
+* Viviane de Almeida Torres
 
 ## Instruções de utilização
 
