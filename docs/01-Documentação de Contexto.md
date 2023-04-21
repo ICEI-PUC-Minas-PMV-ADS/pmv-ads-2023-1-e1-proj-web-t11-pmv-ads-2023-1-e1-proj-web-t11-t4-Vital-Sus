@@ -1,46 +1,49 @@
-# Introdução
+# DOCUMENTAÇÃO DE CONTEXTO 
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Em março do ano de 2020, a Organização Mundial da Saúde declarou uma pandemia da Síndrome Respiratória Aguda-Grave causada pelo Coronavírus 19 (SARS-COV-2), em função dos níveis de disseminação e gravidade (OMS, 2022). No Brasil, o Conselho Nacional de Saúde emitiu recomendações para a promoção do isolamento social, conforme orientações da OMS e da Organização Pan-Americana da Saúde (Opas) (BRASIL, 2020):
+
+>“Considerando que a taxa de 2,8 de contaminação pelo novo Corona vírus no Brasil, apontada como a maior entre 48 países analisados pelo Imperial College de Londres, impõe ao país um cenário epidemiológico com crescimento acelerado e exponencial de casos e óbitos”. (BRASIL,2020) 
+
+O cenário previsto pelo Imperial College de Londres tornou-se uma realidade, e com ela, se escancararam diversos problemas estruturais da saúde do país. Além disso, observou-se a necessidade de disponibilizar novos leitos numa tentativa falha de não sobrecarregar o sistema de saúde. 
+
+>"segundo o Ministério da Saúde (MS) 1 a cada 10 pacientes infectados necessitam de atendimento hospitalar e segundo a Federação Brasileira de Hospitais (FBH) o Brasil possui apenas 1,95 leitos/1000 habitantes, número este muito inferior comparado a média mundial que é de 3,2 leitos/1000 habitantes." (AIRES,2020) 
+
+ Tendo como exemplo então a pandemia do COVID-19, o Brasil, assim como o restante do mundo, teve seus problemas estruturais na área da saúde, principalmente em decorrência da falta de leitos e a superlotação de hospitais e unidades de saúde, que impedia o tratamento eficaz dos pacientes, além de abrir brechas para questões de biossegurança, tanto dos pacientes quanto das equipes de saúde, já que se trata de uma doença transmitida pessoa a pessoa, através de partículas e aerossóis (VRISHALI, 2021). 
+
+Em decorrência disso, o Ministério da Saúde passou a incentivar a utilização de hospitais de campanha para o tratamento e segregação de casos simples e moderados do COVID-19, numa tentativa de evitar um colapso do sistema de saúde. Estes são um tipo especial de hospital que é uma “unidade hospitalar emergencial temporária que tem como objetivo ofertar serviços de atenção à saúde, através de equipes multiprofissionais, em atendimentos de urgência e emergência" (AIRES, 2020).  
+
+Acerca da utilização dessas unidades hospitalares, o Ministério da Saúde emitiu a Portaria 1514 de 15 de junho de 2020, que traz importantes considerações, sendo duas delas as contidas nos artigos 2 e 4:
+
+> - “Art. 2º A implantação dos Hospitais de Campanha consiste em uma das estratégias, em caráter excepcional e temporário, que podem ser utilizadas para ampliação e organização da oferta de leitos e deverá fazer parte dos Planos de Contingência elaborados pelos governos Estaduais, do Distrito Federal e dos Municípios para o enfrentamento à COVID-19. 
+> - Art. 4º As unidades hospitalares de campanha devem funcionar com o acesso regulado, voltadas para a internação de pacientes com sintomas respiratórios de baixa e média complexidade, podendo funcionar como retaguarda clínica para unidades hospitalares permanentes que possuam UTI e sejam definidas como referência para tratamento da COVID-19” (BRASIL, 2020) 
+
+Entretanto, os hospitais de campanha não conseguiram suprir as necessidades por completo, e ocorreu uma superlotação e falta de leitos no geral. Posto isso, nota-se a importância de identificar de forma correta e otimizada os casos indicados a ir aos hospitais de campanha ou não. Dessa forma, o paciente não estaria exposto desnecessariamente ao ambiente hospitalar e a possíveis contaminações, bem como reduziria a superlotação dos ambientes de saúde, trazendo melhores condições de trabalho às equipes de saúde e de atendimento aos pacientes que necessitem de internações. 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Conforme demostrado superlotação nas unidades de saúde e suas consequências negativas, tais como a demora no atendimento, sobrecarga dos profissionais de saúde e busca inadequada de atendimento em unidades não especializadas. Esses problemas são bastante comuns em muitos sistemas de saúde e podem afetar significativamente a qualidade do atendimento e a saúde dos pacientes. 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral deste projeto e o desenvolvimento de uma aplicação web para reduzir o fluxo de pessoas nas filas de espera de hospitais e oferecer uma alternativa mais eficiente e segura para os pacientes que precisam de atendimento médico.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Como objetivos específicos, podemos ressaltar:
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- Contribuir para a prevenção e controle de doenças transmissíveis, uma vez que ajuda a reduzir a aglomeração de pessoas em ambientes de saúde. 
+
+- Reduzir o tempo de espera dos pacientes e melhorar a qualidade do atendimento prestado. 
+
+- Oferecer aos usuários funcionalidades que permitem a interação com os agentes de saúde de forma fácil e segura, proporcionando maior conforto e eficiência tanto para os pacientes quanto para os profissionais de saúde. 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Atualmente, o atendimento de urgência é centrado no hospital. Os serviços de emergência operam com um grande fluxo de demanda espontânea, o que acaba levando à superlotação e, como consequência, aumento da mortalidade de pacientes, atrasos no transporte, atrasos no tratamento, desvios de ambulâncias e maiores custos financeiros, como apresentado no Gráfico 1. Existem outras consequências indesejadas, como perda de recursos, uso indevido de tempo e insatisfação entre a equipe do pronto-socorro e os pacientes. (ERENLER et al., 2014). É necessário repensar o modelo de atendimento de urgência e buscar soluções alternativas para melhorar a eficiência e a qualidade do atendimento, reduzindo a superlotação nos serviços de emergência e melhorando a satisfação dos pacientes e profissionais da área da saúde. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
+Gráfico 1 - Percentagem de hospitais que relatam algum impacto
+![Exemplo de UserFlow](img/graficoImpacto.png)
+Fonte: Adaptado de MedicinaNET (2013).
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Por se tratar de um problema que abrange toda a rede de saúde nacional, o público-alvo
+desta solução é definido por todas as pessoas que utilizem a rede pública de saúde e agentes de
+saúde, dessa maneira estejam vulneráveis aos riscos da superlotação, como a consequente
+exposição às doenças transmissíveis e a baixa qualidade de atendimento.
