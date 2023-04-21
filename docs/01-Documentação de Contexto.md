@@ -39,7 +39,7 @@ Como objetivos específicos, podemos ressaltar:
 Atualmente, o atendimento de urgência é centrado no hospital. Os serviços de emergência operam com um grande fluxo de demanda espontânea, o que acaba levando à superlotação e, como consequência, aumento da mortalidade de pacientes, atrasos no transporte, atrasos no tratamento, desvios de ambulâncias e maiores custos financeiros, como apresentado no Gráfico 1. Existem outras consequências indesejadas, como perda de recursos, uso indevido de tempo e insatisfação entre a equipe do pronto-socorro e os pacientes. (ERENLER et al., 2014). É necessário repensar o modelo de atendimento de urgência e buscar soluções alternativas para melhorar a eficiência e a qualidade do atendimento, reduzindo a superlotação nos serviços de emergência e melhorando a satisfação dos pacientes e profissionais da área da saúde. 
 
 Gráfico 1 - Percentagem de hospitais que relatam algum impacto
-![Exemplo de UserFlow](img/graficoImpacto.png)
+![Gráfico de Impacto](img/graficoImpacto.png)
 Fonte: Adaptado de MedicinaNET (2013).
 ## Público-Alvo
 
