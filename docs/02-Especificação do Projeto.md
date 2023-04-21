@@ -1,91 +1,120 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Os membros da equipe realizaram um trabalho de imersão para consolidar a definição
+do problema e os pontos mais relevantes a serem abordados neste projeto, contando com a
+participação dos usuários por meio de observações em seu ambiente habitual, estudos e
+pesquisas. Os detalhes coletados foram organizados em personas e histórias de usuários para
+guiar o design e desenvolvimento do produto ou serviço.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Durante o processo de estudo foram coletadas informações como idade, ocupação,
+motivação e frustrações. das personas identificadas durante o processo de entendimento do
+problema. As personas são apresentadas nas figuras a seguir:
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+||Maria Aparecida dos Santos - 25 anos||
+|-|-|-|
+|![Gráfico de Impacto](img/usuário.png)| **Ocupação:** Balconista de lanchonete.| **Dispositivos:** Smartphone.|
+|**Motivações:** Ficar menos tempo na espera de atendimento e evitar exposição desnecessária.| **Frustrações:** Demora de atendimento na rede pública e risco de contaminação por exposição.| **Hobbies:** Leitura e sinuca.
+
+||Renata Texeira - 35 anos||
+|-|-|-|
+|![Gráfico de Impacto](img/assistente-administrativo.png)| **Ocupação:** Administrativa do Sus.| **Dispositivos:** Smartphone, desktop e tablet.|
+|**Motivações:** Melhorar o ambiente de trabalho e reduzir o tempo de espera por atendimento.| **Frustrações:** Piora nos indicadores de atendimento e superlotação das unidades de saúde.| **Hobbies:** Yoga.
+
+||Fernanda Amaral - 27 anos||
+|-|-|-|
+|![Gráfico de Impacto](img/enfermeira.png)| **Ocupação:** Enfermeira do sistema de saúde| **Dispositivos:** Smartphone, desktop e tablet|
+|**Motivações:** Melhorar o ambiente de trabalho e otimizar o tempo de atendimento.| **Frustrações:** Sobrecarga de trabalho.| **Hobbies:** Leitura e música.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir da compreensão das personas identificadas na etapa anterior, foram registradas as seguintes histórias de usuários.
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Paciente       | Fazer o login junto ao site         | Começar o processo de triagem               |
+|Paciente       | Preencher o questionário da triagem | Saber a prioridade e um pré-diagnostico do seu problema |
+|Paciente       | Visualizar a marcação da consulta   | Saber qual unidade e especialidade que vai ser direcionado |
+|Agente de saúde| Fazer login junto ao site com suas credenciais | Para ter acesso aos questionários dos pacientes |
+|Agente de saúde| Analisar os questionários dos pacientes | Para fazer um pré-diagnostico e sua prioridade |
+|Administrador  | Marcar consulta do paciente após triagem | Para direcionar os pacientes para unidades e sua especialidade correta |
+|Administrador  | Notificar o paciente da consulta | Para diminuir as ausências |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+## Requisitos do Projeto
 
-## Requisitos
+Requisitos de um projeto de software são as especificações e funcionalidades que o
+software deve possuir para atender às necessidades do usuário e dos objetivos do projeto. Eles descrevem o que o software deve fazer e como deve funcionar em termos de recursos, funcionalidades, desempenho, segurança, usabilidade, entre outros aspectos relevantes.
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Os requisitos são uma parte essencial do processo de desenvolvimento de software, pois
+ajudam a garantir que o software atenda às necessidades do usuário e do negócio e que sejaentregue dentro do prazo e do orçamento estabelecidos. Além disso, eles fornecem uma base clara para o design, implementação, teste e manutenção do software.
 
 ### Requisitos Funcionais
 
+Requisitos funcionais são um tipo de requisito de um projeto de software que descrevem
+as funções e tarefas específicas que o software deve executar para atender às necessidades do usuário e do negócio. Em outras palavras, eles descrevem o que o software deve fazer para cumprir sua finalidade.
+
+Os requisitos funcionais desse projeto se apresentam na tabela abaixo:
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O site deve apresentar uma página inicial onde o usuário faça o login. | ALTA | 
+|RF-002| O site deve apresentar uma página onde o profissional de saúde responsável pela triagem faça um login com suas credenciais.   | ALTA |
+|RF-003| O site deve possuir funcionalidade de cadastro de novo usuários. | ALTA | 
+|RF-004| O site deve permitir ao usuário que ele responda um questionário preestabelecido de triagem. | ALTA | 
+|RF-005| O site deve permitir que o profissional de saúde tenha acesso aos questionários dos usuários. | ALTA | 
+|RF-006| O site deve permitir que o profissional de saúde marque a consulta com a especificação e local correto do usuário. | ALTA | 
+|RF-007| O site deve permitir o usuário visualizar as informações de sua marcação da consulta. | MÉDIA | 
+|RF-008| O site deve permitir que o profissional de saúde verifique a agenda das unidades de saúde. | MÉDIA | 
+
 
 
 ### Requisitos não Funcionais
 
+Requisitos não-funcionais são um tipo de requisito de um projeto de software que
+descrevem as características que o software deve possuir, além das funcionalidades específicas
+que ele deve executar. Eles descrevem como o software deve funcionar em termos de
+desempenho, segurança, confiabilidade, usabilidade e outros aspectos relevantes. Os requisitos
+não-funcionais são tão importantes quanto os requisitos funcionais, pois afetam diretamente a
+qualidade e a usabilidade do software.
+
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender:
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| Seguir boas práticas de SEO. Isso inclui técnicas de otimização on-page e garantir a facilidade de rastreamento pelos motores de busca. | ALTA | 
+|RNF-002| O site deverá ser responsivo permitindo a visualização em um celular de forma adequada. |  ALTA | 
+|RNF-003| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |  ALTA | 
+|RNF-004| Garantir acessibilidade, tornar o software utilizável por pessoas com deficiências visuais, auditivas, motoras ou cognitivas, bem como conformidade com os padrões de acessibilidade. |  MÉDIA | 
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+Restrições são um tipo de requisito de um projeto de software que descrevem limitações
+ou restrições que devem ser consideradas no desenvolvimento do software. Essas restrições
+podem incluir restrições técnicas, orçamentárias, de tempo ou de recursos humanos.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+Alguns exemplos de restrições que podem ser consideradas em um projeto de software são:
 
+- Restrições técnicas: podem incluir limitações de hardware, software, linguagens de
+programação, padrões de codificação, entre outros aspectos técnicos que devem ser
+considerados no desenvolvimento do software.
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+- Restrições orçamentárias: podem incluir limitações de orçamento ou de recursos
+financeiros disponíveis para o projeto.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+- Restrições de tempo: podem incluir prazos para a entrega do software ou para a
+conclusão de etapas específicas do projeto.
+
+- Restrições de recursos humanos: podem incluir limitações na disponibilidade de
+membros da equipe ou na quantidade de recursos humanos disponíveis para o projeto.
+As restrições do projeto se encontram na tabela a seguir:
+
+|ID     | Descrição   |
+|-------|-------------------------|
+|RE-001| Para acessar o aplicativo, é necessário estar conectado à internet e utilizar um browser que suporta o HTML 5.  |
+|RE-002| O aplicativo será desenvolvido utilizando somente as tecnologias de front-end HTML 5, CSS e Javascript, limitando a escolha de outras tecnologias para o desenvolvimento do software.  | 
+|RE-003| O aplicativo deve ser entregue com os backlogs de prioridade alta conforme definido pelo PO até Junho/2023.  |
+|RE-004| O custo do site foi definido no valor de R$ 10.000,00 reais com os requisitos funcionais listados acima com um time de 5 colaboradores. |
+|RE-005| Qualquer pedido de alteração feito pelo cliente deverá ser discutido com o time para ajustar prazo e custos. |
