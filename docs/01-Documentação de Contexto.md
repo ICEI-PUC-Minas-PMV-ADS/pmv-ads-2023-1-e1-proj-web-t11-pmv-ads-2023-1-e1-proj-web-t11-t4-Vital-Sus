@@ -24,7 +24,7 @@ Conforme demostrado superlotação nas unidades de saúde e suas consequências 
 
 ## Objetivos
 
-O objetivo geral deste projeto e o desenvolvimento de uma aplicação web para reduzir o fluxo de pessoas nas filas de espera de hospitais e oferecer uma alternativa mais eficiente e segura para os pacientes que precisam de atendimento médico.
+O objetivo geral deste projeto é o desenvolvimento de uma aplicação web para reduzir o fluxo de pessoas nas filas de espera de hospitais e oferecer uma alternativa mais eficiente e segura para os pacientes que precisam de atendimento médico.
 
 Como objetivos específicos, podemos ressaltar:
  
