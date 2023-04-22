@@ -1,4 +1,4 @@
-# Especificações do Projeto
+# ESPECIFICAÇÕES DO PROJETO
 
 Os membros da equipe realizaram um trabalho de imersão para consolidar a definição
 do problema e os pontos mais relevantes a serem abordados neste projeto, contando com a

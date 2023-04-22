@@ -1,5 +1,5 @@
 
-# Projeto de Interface
+# PROJETO DE INTERFACE
 
 Ao desenvolver a interface do sistema, estamos levando em consideração diversas questões que são cruciais para garantir uma experiência de usuário satisfatória. Estamos nos concentrando em aspectos como agilidade, acessibilidade e usabilidade, para que o sistema possa ser utilizado com facilidade por pessoas de diferentes perfis e com diferentes necessidades.
 
