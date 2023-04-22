@@ -1,6 +1,6 @@
 # VITAL SUS: Melhorando a prestação de serviços de saúde 
 
-![Gráfico de Impacto](docs/img/logo-VitalSUS.png)
+![Logo VitalSUS](docs/img/logo-VitalSUS.png)
 
 `Analise de desenvolvimento sistemas`
 
