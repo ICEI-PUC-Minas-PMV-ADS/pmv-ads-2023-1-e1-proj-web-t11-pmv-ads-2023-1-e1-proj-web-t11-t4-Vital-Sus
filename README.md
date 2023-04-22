@@ -1,5 +1,7 @@
 # VITAL SUS: Melhorando a prestação de serviços de saúde 
 
+![Logo VitalSUS](docs/img/logo-VitalSUS.png)
+
 `Analise de desenvolvimento sistemas`
 
 `Eixo 1 - Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 11 - 2023/1`
@@ -22,7 +24,7 @@ Esperar muito tempo em hospitais pode ser ruim. Às vezes, os hospitais ficam mu
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+~
 
 # Documentação
 
