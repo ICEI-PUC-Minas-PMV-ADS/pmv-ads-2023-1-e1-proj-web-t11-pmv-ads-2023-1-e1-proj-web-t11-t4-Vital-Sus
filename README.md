@@ -6,7 +6,7 @@
 
 `01/2023`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Esperar muito tempo em hospitais pode ser ruim. Às vezes, os hospitais ficam muito cheios e isso faz com que os pacientes esperem mais, os profissionais de saúde fiquem cansados e algumas pessoas procurem atendimento em lugares que não são apropriados. Isso acontece em muitos lugares e pode afetar muito a qualidade do atendimento e a saúde das pessoas. O objetivo deste projeto é criar um site para ajudar a reduzir as filas de espera nos hospitais e oferecer aos pacientes uma maneira mais rápida e segura de receber atendimento médico.
 
 ## Integrantes
 
