@@ -18,7 +18,7 @@ Fonte: Dos autores (2023).
 
 ## Wireframes
 
-O texto apresentado descreve a estrutura comum das telas do sistema, conforme previamente apresentado no fluxo de telas. Essas telas são compostas por três grandes blocos distintos, que são o cabeçalho, o conteúdo e o rodapé, como exemplificado na Figura 3.
+O texto apresentado descreve a estrutura comum das telas do sistema, conforme previamente apresentado no fluxo de telas. Essas telas são compostas por três grandes blocos distintos, que são o cabeçalho, o conteúdo e o rodapé, como exemplificado na Figura abaixo.
 
 - O cabeçalho é a parte superior da página que geralmente contém o logo da empresa ou aplicação, bem como a navegação principal. Essa navegação pode incluir links para outras seções do site, área de login e cadastro, busca, entre outros. O cabeçalho é uma parte importante da página, pois permite que o usuário acesse facilmente outras áreas do site e saiba onde está navegando.
 
