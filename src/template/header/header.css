@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 16px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+  }
+  
+  .logo {
+    max-width: 80px;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .nav a {
+    margin-left: auto;
+    color: #000000;
+    text-decoration: none;
+    padding-right: 72px;
+  }
+  
+  
+  .botao {
+    background-color: #005F89;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .minha-conta a {
+    margin-left: auto;
+    color: #000000;
+    text-decoration: none;
+    padding-right: 72px;
+  }
+  
