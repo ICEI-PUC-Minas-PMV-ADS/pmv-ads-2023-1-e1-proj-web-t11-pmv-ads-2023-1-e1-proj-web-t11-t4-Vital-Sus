@@ -1,0 +1,89 @@
+.container {
+    margin: 0 auto;
+  }
+  
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E2F6FF;
+    padding: 32px 128px;
+  }
+  
+  .content {
+    max-width: 650px;
+    justify-content: space-between;
+    margin: 32px;
+  }
+
+  .content h1 {
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 16px;
+  }
+
+  .content p {
+    text-align: justify;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  
+  .image img {
+    max-width: 500px;
+    border-radius: 100px;
+    border: 5px solid #005F89;
+    margin: 32px;
+
+  }
+
+  button {
+    background-color: #005F89;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .secondary-section {
+    margin-top: 40px;
+  }
+
+  .secondary-section h2 {
+    text-align: center;
+    font-family: 'Belleza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 16px;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px
+  }
+  
+  .iconArea {
+    text-align: center;
+  }
+
+  .iconArea p {
+    text-align: justify;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 16px;
+  }
+
+  .icon{
+    font-size: 100px;
+    color: #005F89;
+  }
