@@ -41,11 +41,11 @@ function Cadastro() {
 
                 <br></br>
 
-                <label for="Cep">Cep*</label>
+                <label for="cep">Cep*</label>
                 <label for="logradouro">Logradouro*</label>
                 <label for="bairro">Bairro*</label><br></br>
 
-                <input type="number" id="cep" name="cep" placeholder='30492-015' />
+                <input type="number" id="cep" name="cep" placeholder='xxxxx-xxx' />
                 <input type="text" id="logradouro" name="logradouro" placeholder='Av/Rua' />
                 <input type="text" id="bairro" name="bairro" placeholder='Bairro' /><br></br>
 
