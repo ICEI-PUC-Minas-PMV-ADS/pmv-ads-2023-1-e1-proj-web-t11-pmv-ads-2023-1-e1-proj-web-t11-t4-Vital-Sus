@@ -1,0 +1,43 @@
+.Cadastro {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 36px;
+  
+  }
+
+  h1{
+    text-align: left;
+  }
+  
+ 
+  input{
+    display: -moz-inline-box;
+    width: 20%;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+  
+  }
+  
+  label{
+    display:inline-table;
+    width: 22%;
+    padding-bottom: 30px;
+    
+  }
+  select{
+    display: inline-block;
+    width: 20.5%;
+    height: 22px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  button{
+    display: inline;
+    width: 12%;
+    margin: 30px;
+    background-color: cadetblue;
+  }
+ 
+
+  
