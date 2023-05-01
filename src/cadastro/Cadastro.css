@@ -2,11 +2,13 @@
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 30px;
+    
   
   }
 
   h1{
     text-align: left;
+    text-decoration-line: underline;
   }
   
  
@@ -37,7 +39,25 @@
     width: 12%;
     margin: 30px;
     background-color: cadetblue;
+    border-radius: 10px;
+  }
+  
+  #cadastrar{
+    margin-left: 980px;
+    background-color:#005F89;
+    width: 15%;
+    padding: 15px;
+    border-radius: 10px;
   }
  
-
+  #box{
+    display: block;
+    width:45%;
+    height: 20px;
+    padding: 10px;
+    margin-left: 370px;
+    margin-right: 0%;
+    background-color: burlywood;
+    border-radius: 10px;
+  }
   
