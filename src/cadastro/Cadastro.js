@@ -73,10 +73,9 @@ function Cadastro() {
                 <input type="passoword" id="senha" name='senha' placeholder='senha' />
                 <input type="passoword" id="confirmar_senha" name="confirmar_senha" placeholder='confirmar-senha' /><br />
                 <br></br>
+                <p id="box" name="box"> Essas informações serão utilizadas apenas para fins de identificação e
+                segurança de acordo com as politicas de privacidade da nossa empresa.</p>
                 <input type="submit" id="cadastrar" value="Cadastrar"></input>
-                <input type="text" id="box" name="box" value="Essas informações serão utilizadas apenas para fins de identificação e
-                segurança de acordo com as politicas de privacidade da nossa empresa."/>
-                
 
 
 
