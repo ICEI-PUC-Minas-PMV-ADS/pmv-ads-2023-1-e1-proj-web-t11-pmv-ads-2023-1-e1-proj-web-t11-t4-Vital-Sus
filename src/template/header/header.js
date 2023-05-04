@@ -1,7 +1,8 @@
 import React from 'react';
 import './header.css';
+import ButtonVT from '../../components/button/button';
 
-function Header({ showButton, labelButton, showMyAccount }) {
+const Header = ({ showButton, labelButton, showMyAccount, onClick }) => {
   return (
     <header className="header">
       <div className="logo-container">
@@ -16,9 +17,16 @@ function Header({ showButton, labelButton, showMyAccount }) {
           <a href="/perfil">Meu Perfil</a>
         </nav>
       )}
-      {showButton && <button className="botao">{labelButton}</button>}
+      {showButton && (
+        <ButtonVT
+          className="botao"
+          model={'primary'}
+          label={labelButton}
+          onClick={onClick}
+        ></ButtonVT>
+      )}
     </header>
   );
-}
+};
 
 export default Header;

@@ -3,8 +3,9 @@ import './homePage.css';
 import { MdHealthAndSafety } from 'react-icons/md';
 import { FaHandHoldingHeart } from 'react-icons/fa';
 import { AiFillClockCircle } from 'react-icons/ai';
+import ButtonVT from '../../components/button/button';
 
-function HomePage() {
+const HomePage = () => {
   return (
     <>
       <TemplatePage showButton={true} labelButton={'Entrar/Criar conta'}>
@@ -26,7 +27,7 @@ function HomePage() {
                 recebendo o tratamento adequado e proteger sua saúde a longo
                 prazo.
               </p>
-              <button>Iniciar Triagem</button>
+              <ButtonVT model={'primary'} label={'Iniciar Triagem'}></ButtonVT>
             </div>
             <div className="image">
               <img src="img/homePage-img.png" alt="Imagem" />
@@ -53,6 +54,6 @@ function HomePage() {
       </TemplatePage>
     </>
   );
-}
+};
 
 export default HomePage;

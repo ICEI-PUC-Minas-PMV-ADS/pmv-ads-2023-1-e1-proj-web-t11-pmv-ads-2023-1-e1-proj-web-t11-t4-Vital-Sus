@@ -2,8 +2,9 @@ import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 import './footer.css';
+import ButtonVT from '../../components/button/button';
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__column">
@@ -33,7 +34,11 @@ function Footer() {
         </p>
         <form className="footer__form">
           <input type="email" placeholder="Insira seu email" />
-          <button type="submit">Inscreva-se</button>
+          <ButtonVT
+            type="submit"
+            model={'primary'}
+            label={'Inscreva-se'}
+          ></ButtonVT>
         </form>
       </div>
       <div className="footer_credits">
@@ -42,6 +47,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
