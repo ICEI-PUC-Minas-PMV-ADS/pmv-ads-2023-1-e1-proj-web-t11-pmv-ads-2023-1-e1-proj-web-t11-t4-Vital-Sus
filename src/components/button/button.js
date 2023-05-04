@@ -1,4 +1,4 @@
-import { StyleButton } from './slytes';
+import { StyleButton } from './styles';
 
 const ButtonVT = ({ label, onClick, model }) => {
   return (

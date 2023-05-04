@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { Button } from '@mui/material';
 
 const primary = css`
@@ -24,6 +25,10 @@ const secundary = css`
       border: 2px solid black;
       box-shadow: none;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 `;
 
@@ -36,6 +41,8 @@ export const StyleButton = styled(Button)`
     cursor: pointer;
     box-shadow: none;
     text-transform: none;
+    size: auto;
+    white-space: nowrap;
 
     ${({ model }) => model === 'primary' && primary}
     ${({ model }) => model === 'secundary' && secundary}
