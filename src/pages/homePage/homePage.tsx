@@ -1,9 +1,10 @@
-import TemplatePage from '../../template/template-page/templatePage';
-import './homePage.css';
+import './styles.css';
 import { MdHealthAndSafety } from 'react-icons/md';
 import { FaHandHoldingHeart } from 'react-icons/fa';
 import { AiFillClockCircle } from 'react-icons/ai';
 import ButtonVT from '../../components/button/button';
+import TemplatePage from '../../template/template-page/templatePage';
+import React from 'react';
 
 const HomePage = () => {
   return (
@@ -27,7 +28,11 @@ const HomePage = () => {
                 recebendo o tratamento adequado e proteger sua saúde a longo
                 prazo.
               </p>
-              <ButtonVT model={'primary'} label={'Iniciar Triagem'}></ButtonVT>
+              <ButtonVT
+                model={'primary'}
+                label={'Iniciar Triagem'}
+                onClick={() => {}}
+              ></ButtonVT>
             </div>
             <div className="image">
               <img src="img/homePage-img.png" alt="Imagem" />

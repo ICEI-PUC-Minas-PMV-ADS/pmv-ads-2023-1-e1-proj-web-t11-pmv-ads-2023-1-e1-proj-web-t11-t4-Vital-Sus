@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import styled from '@emotion/styled';
-import { TextField } from '@mui/material';
+import { TextField, TextFieldProps } from '@mui/material';
 
 const primary = css({
   '& label': {
@@ -53,10 +53,14 @@ const secundary = css({
   },
 });
 
-export const StyledTextField = styled(TextField)`
+type StyleTextFieldProps = TextFieldProps & {
+  model?: 'primary' | 'secundary';
+};
+
+export const StyledTextField = styled(TextField)<StyleTextFieldProps>`
   & .MuiInputBase-root {
     width: 300px;
   }
-  ${({ model }) => model === 'primary' && primary}
-  ${({ model }) => model === 'secundary' && secundary}
+  ${({ model }) => model === 'primary' ? primary : {}}
+  ${({ model }) => model === 'secundary' ? secundary : {}}
 `;

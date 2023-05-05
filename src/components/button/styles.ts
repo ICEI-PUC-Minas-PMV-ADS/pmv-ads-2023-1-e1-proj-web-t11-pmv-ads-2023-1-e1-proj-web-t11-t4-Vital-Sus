@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import styled from '@emotion/styled';
-import { Button } from '@mui/material';
+import { Button, ButtonProps } from '@mui/material';
 
 const primary = css`
   && {
@@ -32,7 +32,11 @@ const secundary = css`
   }
 `;
 
-export const StyleButton = styled(Button)`
+type StyleButtonProps = ButtonProps & {
+  model?: 'primary' | 'secundary';
+};
+
+export const StyleButton = styled(Button)<StyleButtonProps>`
   && {
     font-size: 16px;
     padding: 5px 10px;
@@ -44,7 +48,7 @@ export const StyleButton = styled(Button)`
     size: auto;
     white-space: nowrap;
 
-    ${({ model }) => model === 'primary' && primary}
-    ${({ model }) => model === 'secundary' && secundary}
+    ${({ model }) => model === 'primary' ? primary : {}}
+    ${({ model }) => model === 'secundary' ? secundary : {}}
   }
 `;

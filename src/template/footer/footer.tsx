@@ -39,12 +39,7 @@ const Footer = () => {
           <form className="footer_form">
             <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap">
               <TextFieldVT label="Email" model="secundary"></TextFieldVT>
-              <ButtonVT
-                type="submit"
-                model={'primary'}
-                label={'Inscreva-se'}
-                className="footer_button"
-              ></ButtonVT>
+              <ButtonVT model={'primary'} label={'Inscreva-se'}></ButtonVT>
             </Stack>
           </form>
         </Grid>

@@ -2,7 +2,19 @@ import React from 'react';
 import './header.css';
 import ButtonVT from '../../components/button/button';
 
-const Header = ({ showButton, labelButton, showMyAccount, onClick }) => {
+export interface HeaderProps {
+  showButton?: boolean;
+  labelButton: string;
+  showMyAccount?: boolean;
+  onClick?: () => void;
+}
+
+const Header = ({
+  showButton,
+  labelButton,
+  showMyAccount,
+  onClick,
+}: HeaderProps) => {
   return (
     <header className="header">
       <div className="logo-container">
@@ -19,7 +31,6 @@ const Header = ({ showButton, labelButton, showMyAccount, onClick }) => {
       )}
       {showButton && (
         <ButtonVT
-          className="botao"
           model={'primary'}
           label={labelButton}
           onClick={onClick}
