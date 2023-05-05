@@ -86,6 +86,18 @@ function Cadastro1() {
                 <Grid xs={4}>
                 <input type="passoword" id="confirmar_senha" name="confirmar_senha" placeholder="confirmar-senha"/>
                 </Grid>
+
+                <Grid container rowspacing={2}>
+                <Grid xs={8}>
+                <p id="box" name="box">
+                  {' '}
+                  Essas informações serão utilizadas apenas para fins de
+                  identificação e segurança de acordo com as politicas de
+                  privacidade da nossa empresa.
+                </p> </Grid>
+                <Grid xs={4}>
+                <input type="submit" id="cadastrar" value="Cadastrar"></input>
+                </Grid>
     
             </Grid>
 
