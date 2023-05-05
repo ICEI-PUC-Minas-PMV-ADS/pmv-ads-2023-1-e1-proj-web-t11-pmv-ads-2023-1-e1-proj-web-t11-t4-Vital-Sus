@@ -121,7 +121,7 @@ function Cadastro() {
                   name="cidade"
                   placeholder="Cidade/Estado"
                 />
-                <input type="text" id="pais" name="pais" placeholder="Pais" />
+                <input type="text" id="pais" name="pais" placeholder="Brasil" />
                 <br></br>
 
                 <br></br>
