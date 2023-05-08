@@ -16,23 +16,23 @@ const Cadastro = () => {
           <div>
             <h1>Cadastrar</h1>
           </div>
-          <form onSubmit="return validarFormulario">
+          <form >
 
             <Grid
               container
               rowspacing={1}
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             >
-              <Grid class="usuario" xs={8} md={4} >
+              <Grid class="usuario" item xs={12} sm={6} md={6}>
                 <ButtonVT id="usuario" model={'secundary'} label={'Usuario'}></ButtonVT>
               </Grid>
-              <Grid class="funcionario" xs={8} md={4}>
+              <Grid class="funcionario" item xs={12} sm={6} md={6}>
                 <ButtonVT id="funcionario" model={'secundary'} label={'Funcionario'}></ButtonVT>
               </Grid>
             </Grid>
 
             <Grid container rowspacing={2}>
-              <Grid xs={4} md={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="text"
                   id="nome"
@@ -40,7 +40,7 @@ const Cadastro = () => {
                   placeholder="Nome-Completo"
                 />
               </Grid>
-              <Grid xs={4} md={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="data"
                   id="data-nascimento"
@@ -48,7 +48,7 @@ const Cadastro = () => {
                   placeholder="Data de nascimento"
                 />
               </Grid>
-              <Grid xs={4} md={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input type="text" id="cpf" name="cpf" placeholder="cpf" />
               </Grid>
             </Grid>
@@ -56,14 +56,14 @@ const Cadastro = () => {
             <br></br>
 
             <Grid container rowspacing={2}>
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <select onchange="genero()" id="genero">
                   <option>Escolha seu Genero</option>
                   <option>Masculino</option>
                   <option>Feminino</option>
                 </select>
               </Grid>
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="tel"
                   id="celular"
@@ -72,7 +72,7 @@ const Cadastro = () => {
                 />
               </Grid>
 
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="tel"
                   id="telefone"
@@ -85,10 +85,10 @@ const Cadastro = () => {
             <br></br>
 
             <Grid container rowspacing={2}>
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input type="text" id="cep" name="cep" placeholder="Cep" />
               </Grid>
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="text"
                   id="logradouro"
@@ -97,7 +97,7 @@ const Cadastro = () => {
                 />
               </Grid>
 
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="text"
                   id="bairro"
@@ -110,7 +110,7 @@ const Cadastro = () => {
             <br></br>
 
             <Grid container rowspacing={2}>
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="text"
                   id="complemeto"
@@ -118,7 +118,7 @@ const Cadastro = () => {
                   placeholder="Complemento"
                 />
               </Grid>
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="text"
                   id="cidade"
@@ -127,7 +127,7 @@ const Cadastro = () => {
                 />
               </Grid>
 
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input type="text" id="pais" name="pais" placeholder="Brasil" />
               </Grid>
             </Grid>
@@ -136,10 +136,10 @@ const Cadastro = () => {
             <br></br>
 
             <Grid container rowspacing={2}>
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input type="email" id="email" name="email" placeholder="email" />{' '}
               </Grid>
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="password"
                   id="senha"
@@ -148,7 +148,7 @@ const Cadastro = () => {
                 />
               </Grid>
 
-              <Grid xs={4}>
+              <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="password"
                   id="confirmar_senha"
@@ -158,7 +158,7 @@ const Cadastro = () => {
               </Grid>
 
               <Grid class="final" container rowspacing={2}>
-                <Grid xs={8}>
+                <Grid item xs={12} sm={8} md={8}>
                   <p class="box" id="box" name="box">
                     {' '}
 
@@ -167,7 +167,7 @@ const Cadastro = () => {
                     privacidade da nossa empresa.
                   </p>{' '}
                 </Grid>
-                <Grid xs={4}>
+                <Grid item xs={12} sm={4} md={4}>
                   <ButtonVT class="confirmar" type="submit" id="confirmar" model={'primary'} label={'Cadastrar'}></ButtonVT>
                 </Grid>
               </Grid>
