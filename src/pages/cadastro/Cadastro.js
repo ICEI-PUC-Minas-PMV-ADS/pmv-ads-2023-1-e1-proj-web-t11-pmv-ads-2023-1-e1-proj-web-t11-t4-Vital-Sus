@@ -1,175 +1,184 @@
 import './Cadastro.css';
 import TemplatePage from '../../template/template-page/templatePage';
+import ButtonVT from '../../components/button/button';
+import React from 'react';
+/*import Grid from '@mui/material/Grid'; // Grid version 1*/
+import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 
-function Cadastro() {
+
+
+
+const Cadastro = () => {
   return (
-    <TemplatePage>
-      <div className="Cadastro">
-        <div>
-          <body>
-            <header>
-              <h1>Cadastrar</h1>
-            </header>
-            <main>
-              <button>
-                <h3>Usuario</h3>
-              </button>
-              <button>
-                <h3>Funcionario</h3>
-              </button>
-              <div>
-                <h3>Dados Pessoais</h3>
-              </div>
+    <>
+      <TemplatePage>
+        <div class="container cadastro">
+          <div>
+            <h1>Cadastrar</h1>
+          </div>
+          <form onSubmit="return validarFormulario">
 
-              <form method="post">
-                <label for="nome">Nome Completo*</label>
-                <label for="data-nascimento">Data de nascimento*</label>
-                <label for="cpf">CPF*</label>
-                <br />
+            <Grid
+              container
+              rowspacing={1}
+              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+            >
+              <Grid class="usuario" xs={8} md={4} >
+                <ButtonVT id="usuario" model={'secundary'} label={'Usuario'}></ButtonVT>
+              </Grid>
+              <Grid class="funcionario" xs={8} md={4}>
+                <ButtonVT id="funcionario" model={'secundary'} label={'Funcionario'}></ButtonVT>
+              </Grid>
+            </Grid>
+
+            <Grid container rowspacing={2}>
+              <Grid xs={4} md={4}>
                 <input
                   type="text"
                   id="nome"
                   name="nome"
                   placeholder="Nome-Completo"
                 />
+              </Grid>
+              <Grid xs={4} md={4}>
                 <input
                   type="data"
                   id="data-nascimento"
                   name="data-nascimento"
-                  placeholder="00/00/0000"
+                  placeholder="Data de nascimento"
                 />
-                <input
-                  type="text"
-                  id="cpf"
-                  name="cpf"
-                  placeholder="00000000000"
-                />
-                <br />
+              </Grid>
+              <Grid xs={4} md={4}>
+                <input type="text" id="cpf" name="cpf" placeholder="cpf" />
+              </Grid>
+            </Grid>
+            <br></br>
+            <br></br>
 
-                <br></br>
-                <label for="genero">Genero</label>
-                <label for="celular">Celular</label>
-                <label for="telefone">telefone</label>
-                <br></br>
+            <Grid container rowspacing={2}>
+              <Grid xs={4}>
                 <select onchange="genero()" id="genero">
                   <option>Escolha seu Genero</option>
                   <option>Masculino</option>
                   <option>Feminino</option>
                 </select>
+              </Grid>
+              <Grid xs={4}>
                 <input
                   type="tel"
                   id="celular"
                   name="celular"
-                  placeholder="(31)9xxx-xxxx"
+                  placeholder="Celular"
                 />
+              </Grid>
+
+              <Grid xs={4}>
                 <input
                   type="tel"
                   id="telefone"
                   name="telefone"
-                  placeholder="(31)xxxx-xxxx"
+                  placeholder="Telefone"
                 />
+              </Grid>
+            </Grid>
+            <br></br>
+            <br></br>
 
-                <br></br>
-
-                <header>
-                  <h3>Endereço</h3>
-                </header>
-
-                <br></br>
-
-                <label for="cep">Cep*</label>
-                <label for="logradouro">Logradouro*</label>
-                <label for="bairro">Bairro*</label>
-                <br></br>
-
-                <input
-                  type="number"
-                  id="cep"
-                  name="cep"
-                  placeholder="xxxxx-xxx"
-                />
+            <Grid container rowspacing={2}>
+              <Grid xs={4}>
+                <input type="text" id="cep" name="cep" placeholder="Cep" />
+              </Grid>
+              <Grid xs={4}>
                 <input
                   type="text"
                   id="logradouro"
                   name="logradouro"
                   placeholder="Av/Rua"
                 />
+              </Grid>
+
+              <Grid xs={4}>
                 <input
                   type="text"
                   id="bairro"
                   name="bairro"
                   placeholder="Bairro"
                 />
-                <br></br>
+              </Grid>
+            </Grid>
+            <br></br>
+            <br></br>
 
-                <br></br>
-
-                <label for="complemento">Complemento*</label>
-                <label for="cidade">Cidade/Estado*</label>
-                <label for="pais">Pais*</label>
-                <br></br>
-
+            <Grid container rowspacing={2}>
+              <Grid xs={4}>
                 <input
                   type="text"
-                  id="complemento"
+                  id="complemeto"
                   name="complemento"
-                  placeholder="Ap-casa"
+                  placeholder="Complemento"
                 />
+              </Grid>
+              <Grid xs={4}>
                 <input
                   type="text"
                   id="cidade"
                   name="cidade"
                   placeholder="Cidade/Estado"
                 />
-                <input type="text" id="pais" name="pais" placeholder="Pais" />
-                <br></br>
+              </Grid>
 
-                <br></br>
+              <Grid xs={4}>
+                <input type="text" id="pais" name="pais" placeholder="Brasil" />
+              </Grid>
+            </Grid>
 
-                <header>
-                  <h3>Login</h3>
-                </header>
+            <br></br>
+            <br></br>
 
-                <br></br>
-                <label for="email">E-mail*</label>
-                <label for="senha*">Senha*</label>
-                <label for="confirmar_senha">Confirmação da senha*</label>
-                <br></br>
-
+            <Grid container rowspacing={2}>
+              <Grid xs={4}>
+                <input type="email" id="email" name="email" placeholder="email" />{' '}
+              </Grid>
+              <Grid xs={4}>
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="email"
-                />
-                <input
-                  type="passoword"
+                  type="password"
                   id="senha"
                   name="senha"
                   placeholder="senha"
                 />
+              </Grid>
+
+              <Grid xs={4}>
                 <input
-                  type="passoword"
+                  type="password"
                   id="confirmar_senha"
                   name="confirmar_senha"
                   placeholder="confirmar-senha"
                 />
-                <br />
-                <br></br>
-                <p id="box" name="box">
-                  {' '}
-                  Essas informações serão utilizadas apenas para fins de
-                  identificação e segurança de acordo com as politicas de
-                  privacidade da nossa empresa.
-                </p>
-                <input type="submit" id="cadastrar" value="Cadastrar"></input>
-              </form>
-            </main>
-          </body>
+              </Grid>
+
+              <Grid class="final" container rowspacing={2}>
+                <Grid xs={8}>
+                  <p class="box" id="box" name="box">
+                    {' '}
+
+                    Essas informações serão utilizadas apenas para fins de
+                    identificação e segurança de acordo com as politicas de
+                    privacidade da nossa empresa.
+                  </p>{' '}
+                </Grid>
+                <Grid xs={4}>
+                  <ButtonVT class="confirmar" type="submit" id="confirmar" model={'primary'} label={'Cadastrar'}></ButtonVT>
+                </Grid>
+              </Grid>
+
+            </Grid>
+          </form>
         </div>
-      </div>
-    </TemplatePage>
+
+      </TemplatePage>
+
+    </>
   );
 }
-
 export default Cadastro;
