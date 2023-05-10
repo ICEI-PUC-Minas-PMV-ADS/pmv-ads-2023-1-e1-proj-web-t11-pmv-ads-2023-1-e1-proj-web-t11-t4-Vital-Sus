@@ -3,15 +3,14 @@
     
 }
 .usuario{
-    
-    margin-left: 200px;
-    margin-right: 10px;
-    margin-bottom: 20px;    
+    text-align: center;
+   margin:auto
 }
 .funcionario{
+    text-align: center;
+    margin: auto;
   
-    margin-left: 80px;
-    margin-bottom: 20px;
+   
 }
 h1{
     text-align: left;
@@ -23,13 +22,12 @@ input{
 }
 
 
-.confirmar{
-    margin-left: 800px;
-    margin-bottom: 0px;
+#confirmar{
+    text-align: center;
 padding-top: 10px;
 
 }
-.box{
+#box{
     margin-left: 140px;
     margin-top: 20px;
     margin-right: 200px;

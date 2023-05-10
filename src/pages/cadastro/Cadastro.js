@@ -1,14 +1,33 @@
 import './Cadastro.css';
 import TemplatePage from '../../template/template-page/templatePage';
 import ButtonVT from '../../components/button/button';
-import React from 'react';
-/*import Grid from '@mui/material/Grid'; // Grid version 1*/
+import React, { useState } from 'react';
+/*import Grid from '@mui/material/Grid';*/
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-
-
-
+import { validarFormulario } from '../../utils/validacao2';
 
 const Cadastro = () => {
+  const [nome, setNome] = useState('');
+  const [dataNascimento, setDataNascimento] = useState('');
+  const [cpf, setCpf] = useState('');
+  const [genero, setGenero] = useState('');
+  const [celular, setCelular] = useState('');
+  const [telefone, setTelefone] = useState('');
+  const [cep, setCep] = useState('');
+  const [logradouro, setLogradouro] = useState('');
+  const [bairro, setBairro] = useState('');
+  const [complemento, setComplemento] = useState('');
+  const [cidade, setCidade] = useState('');
+  const [pais, setPais] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [confirmarSenha, setConfirmarSenha] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Aqui você pode enviar os dados do formulário para o servidor ou fazer qualquer outra ação necessária.
+  };
+
   return (
     <>
       <TemplatePage>
@@ -168,7 +187,7 @@ const Cadastro = () => {
                   </p>{' '}
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
-                  <ButtonVT class="confirmar" type="submit" id="confirmar" model={'primary'} label={'Cadastrar'}></ButtonVT>
+                  <ButtonVT onClick={validarFormulario} class="confirmar" type="submit" id="confirmar" model={'primary'} label={'Cadastrar'}></ButtonVT>
                 </Grid>
               </Grid>
 
@@ -182,3 +201,4 @@ const Cadastro = () => {
   );
 }
 export default Cadastro;
+
