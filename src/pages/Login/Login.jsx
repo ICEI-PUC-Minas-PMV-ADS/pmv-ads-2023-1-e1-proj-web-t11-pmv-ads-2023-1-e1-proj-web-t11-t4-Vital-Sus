@@ -7,8 +7,6 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 
-
- 
 const LoginPage = () => {
   return (
    <TemplatePage>
@@ -42,11 +40,12 @@ const LoginPage = () => {
     </div>
     
     <div className='container'>
-      <img src="/public/img/Logo-VitalSus_black" alt="Logo_black"></img>
-       <p className='titulo'> Seja bem vindo ao</p>
+       <p className='titulo'> Seja bem vindo ao
+       <img src="img/Logo-VitalSus_black.png" alt="Logo_black"></img>
+       </p>
        <div className='link'>
-        <p>Ainda não é cadastrado?
-            <a href="./pages/homePage/homePage"><b><u>Clique aqui</u></b></a>
+        <p> Ainda não é cadastrado?
+            <a href="./pages/homePage/homePage">Clique aqui</a>
         </p>
        </div>
     </div>

@@ -6,6 +6,14 @@
     left: 25px;
 }
 
+.field{
+    padding-top: 10px;
+}
+
+.actions{
+    padding-top: 10px;
+}
+
 .container {
     background-image: url(/public/img/LoginPage-img.png);
     background-size: cover;
@@ -14,14 +22,6 @@
     height: 918px; 
     padding: 10px;
     align-items: center;
-}
-
-.field{
-    padding-top: 10px;
-}
-
-.actions{
-padding-top: 10px;
 }
 
 .titulo{
@@ -36,9 +36,12 @@ padding-top: 10px;
     text-transform: uppercase;
 }
 
+.titulo > img{
+    padding-top: 50px;
+}
 .link{
     position: relative;
-    top: 700px;
+    top: 550px;
     text-align: center;
     font-family: 'Lexend';
     font-style: normal;
@@ -48,4 +51,8 @@ padding-top: 10px;
     color: black;
 }
 
+.link > a{
+    font-weight: bold;
+    text-decoration: underline;
+}
 
