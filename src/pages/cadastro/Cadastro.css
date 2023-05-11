@@ -6,6 +6,11 @@
     text-align: center;
    margin:auto
 }
+h2{
+    text-align: center;
+    font-size: medium;
+}
+
 .funcionario{
     text-align: center;
     margin: auto;

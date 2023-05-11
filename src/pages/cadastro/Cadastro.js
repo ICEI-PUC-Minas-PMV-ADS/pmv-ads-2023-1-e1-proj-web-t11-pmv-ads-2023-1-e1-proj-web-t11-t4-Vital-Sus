@@ -50,6 +50,10 @@ const Cadastro = () => {
               </Grid>
             </Grid>
 
+            <div>
+              <h2>Dados pessoais</h2>
+            </div>
+
             <Grid container rowspacing={2}>
               <Grid item xs={12} sm={6} md={4}>
                 <input
@@ -101,6 +105,9 @@ const Cadastro = () => {
               </Grid>
             </Grid>
             <br></br>
+            <div>
+              <h2>Endereço</h2>
+            </div>
             <br></br>
 
             <Grid container rowspacing={2}>
@@ -152,18 +159,22 @@ const Cadastro = () => {
             </Grid>
 
             <br></br>
+            <div>
+              <h2>Login</h2>
+            </div>
+
             <br></br>
 
             <Grid container rowspacing={2}>
               <Grid item xs={12} sm={6} md={4}>
-                <input type="email" id="email" name="email" placeholder="email" />{' '}
+                <input type="email" id="email" name="email" placeholder="Email" />{' '}
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
                 <input
                   type="password"
                   id="senha"
                   name="senha"
-                  placeholder="senha"
+                  placeholder="Senha"
                 />
               </Grid>
 
@@ -172,7 +183,7 @@ const Cadastro = () => {
                   type="password"
                   id="confirmar_senha"
                   name="confirmar_senha"
-                  placeholder="confirmar-senha"
+                  placeholder="Confirmar-senha"
                 />
               </Grid>
 

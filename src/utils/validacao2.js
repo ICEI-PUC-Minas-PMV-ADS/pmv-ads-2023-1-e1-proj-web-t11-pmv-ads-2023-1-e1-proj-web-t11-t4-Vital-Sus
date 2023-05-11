@@ -42,6 +42,8 @@ export function validarFormulario() {
         return false;
     }
 
+    alert('Cadastro efetuado com sucesso');
+
 
 
     const formData = {
