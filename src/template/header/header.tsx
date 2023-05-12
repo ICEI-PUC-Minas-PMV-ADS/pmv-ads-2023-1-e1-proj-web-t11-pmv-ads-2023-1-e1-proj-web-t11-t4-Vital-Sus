@@ -1,6 +1,10 @@
 import React from 'react';
-import './header.css';
 import ButtonVT from '../../components/button/button';
+import Menu from '../../components/menu/menu';
+import { Content, HeaderContainer, Logo } from './styles';
+import { Box, useMediaQuery } from '@mui/material';
+import { retrieveDisplayDesktop } from '../../styles/breakpoints';
+import { useNavigate } from 'react-router-dom';
 
 export interface HeaderProps {
   showButton?: boolean;
@@ -15,28 +19,36 @@ const Header = ({
   showMyAccount,
   onClick,
 }: HeaderProps) => {
-  return (
-    <header className="header">
-      <div className="logo-container">
-        <img src="img/logo-VitalSUS.png" alt="Logo" className="logo" />
-      </div>
+  const displayDesktop = useMediaQuery(retrieveDisplayDesktop());
+
+  const renderDesktopHeader = (props: HeaderProps) => (
+    <>
       <nav className="nav">
         <a href="/">Página Inicial</a>
-        <a href="/triagem">Triagem</a>
+        <a href="/cadastro">Triagem</a>
+        {showMyAccount && <a href="/perfil">Meu Perfil</a>}
       </nav>
-      {showMyAccount && (
-        <nav className="minha-conta">
-          <a href="/perfil">Meu Perfil</a>
-        </nav>
-      )}
       {showButton && (
-        <ButtonVT
-          model={'primary'}
-          label={labelButton}
-          onClick={onClick}
-        ></ButtonVT>
+        <ButtonVT model={'primary'} label={labelButton} onClick={onClick} />
       )}
-    </header>
+    </>
+  );
+
+  const renderMobileHeader = (props: HeaderProps) => <Menu {...props} />;
+
+  return (
+    <HeaderContainer>
+      <Logo src="img/logo-VitalSUS.png" alt="Logo" className="logo" />
+      <Content>
+        {displayDesktop
+          ? renderDesktopHeader({
+              ...{ showButton, labelButton, showMyAccount, onClick },
+            })
+          : renderMobileHeader({
+              ...{ showButton, labelButton, showMyAccount, onClick },
+            })}
+      </Content>
+    </HeaderContainer>
   );
 };
 

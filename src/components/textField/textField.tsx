@@ -1,3 +1,4 @@
+import React from 'react';
 import { StyledTextField } from './styles';
 
 export interface TextFieldVTProps {

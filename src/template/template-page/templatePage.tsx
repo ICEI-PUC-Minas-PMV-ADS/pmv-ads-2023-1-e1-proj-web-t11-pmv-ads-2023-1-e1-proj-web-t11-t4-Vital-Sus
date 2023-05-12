@@ -8,6 +8,7 @@ export interface TemplatePageProps {
   showButton?: boolean;
   labelButton: string;
   showMyAccount?: boolean;
+  onClick?: () => void;
 }
 
 function TemplatePage({
@@ -15,6 +16,7 @@ function TemplatePage({
   showButton,
   labelButton,
   showMyAccount,
+  onClick,
 }: TemplatePageProps) {
   return (
     <TemplateContainer>
@@ -22,10 +24,9 @@ function TemplatePage({
         showButton={showButton}
         labelButton={labelButton}
         showMyAccount={showMyAccount}
+        onClick={onClick}
       ></Header>
-      <main>
-        <TemplateContent>{children}</TemplateContent>
-      </main>
+      <main>{children}</main>
       <Footer />
     </TemplateContainer>
   );

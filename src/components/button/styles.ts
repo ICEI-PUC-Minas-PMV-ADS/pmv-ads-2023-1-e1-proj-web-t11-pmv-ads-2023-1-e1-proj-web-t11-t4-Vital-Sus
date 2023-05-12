@@ -20,6 +20,7 @@ const secundary = css`
     background-color: rgba(0, 95, 137, 0.5);
     color: #000000;
     font-weight: 300;
+    border: 2px solid rgba(0, 95, 137, 0.5);
 
     &:hover {
       border: 2px solid black;

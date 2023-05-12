@@ -1,53 +1,128 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
-
-import './footer.css';
-import ButtonVT from '../../components/button/button';
+import {
+  Container,
+  ContainerBaseFooter,
+  Content,
+  Credits,
+  HorizontalDivider,
+  ImageLogo,
+  LinkIcons,
+  TypographFooter,
+} from './styles';
+import { retrieveDisplayDesktop } from '../../styles/breakpoints';
+import { Grid, Link, Stack, useMediaQuery } from '@mui/material';
 import TextFieldVT from '../../components/textField/textField';
-import { Grid, Stack } from '@mui/material';
+import ButtonVT from '../../components/button/button';
 
 const Footer = () => {
-  return (
-    <footer className="footer">
-      <Grid container className="footer_grid">
-        <Grid item xs={12} sm={4}>
-          <img src="img/logo-white.png" alt="Logo" className="footer__logo" />
-          <div className="footer__social-icons">
-            <a href="https://www.facebook.com">
-              <FaFacebook />
-            </a>
-            <a href="https://www.twitter.com">
-              <FaTwitter />
-            </a>
-            <a href="https://www.linkedin.com">
-              <FaLinkedin />
-            </a>
-          </div>
+  const displayDesktop = useMediaQuery(retrieveDisplayDesktop());
+
+  const textsFooter = {
+    contato: {
+      label: 'CONTATO',
+      email: 'Email: contato@empresa.com',
+      endereco: 'Endereço: Rua Exemplo, 123 - São Paulo/SP',
+      tel: 'Telefone: (11) 5555-5555',
+    },
+    inscricao: {
+      label: 'INSCREVA-SE',
+      paragraph:
+        'Digite seu email para receber notificações sobre nossas atualizações.',
+    },
+  };
+
+  const HeaderFooter = () => {
+    return (
+      <>
+        <ImageLogo src="img/logo-white.png" alt="Logo"></ImageLogo>
+        <LinkIcons>
+          <Link href="https://www.facebook.com">
+            <FaFacebook />
+          </Link>
+          <Link href="https://www.twitter.com">
+            <FaTwitter />
+          </Link>
+          <Link href="https://www.linkedin.com">
+            <FaLinkedin />
+          </Link>
+        </LinkIcons>
+      </>
+    );
+  };
+
+  const InfoFooter = () => {
+    return (
+      <>
+        <Grid xs={4} sm={4} md={4}>
+          <TypographFooter
+            variant="h3"
+            style={{ fontWeight: 700, paddingBottom: '0.5rem' }}
+          >
+            {textsFooter.contato.label}
+          </TypographFooter>
+          <TypographFooter paragraph>
+            {textsFooter.contato.email}
+          </TypographFooter>
+          <TypographFooter paragraph>
+            {textsFooter.contato.endereco}
+          </TypographFooter>
+          <TypographFooter paragraph>{textsFooter.contato.tel}</TypographFooter>
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <h3>CONTATO</h3>
-          <p>Email: contato@empresa.com</p>
-          <p>Endereço: Rua Exemplo, 123 - São Paulo/SP</p>
-          <p>Telefone: (11) 5555-5555</p>
+        <Grid xs={4} sm={4} md={4}>
+          <TypographFooter
+            variant="h3"
+            style={{ fontWeight: 700, paddingBottom: '0.5rem' }}
+          >
+            {textsFooter.inscricao.label}
+          </TypographFooter>
+          <TypographFooter paragraph>
+            {textsFooter.inscricao.paragraph}
+          </TypographFooter>
+          <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap">
+            <TextFieldVT label="Email" model="secundary"></TextFieldVT>
+            <ButtonVT model={'primary'} label={'Inscreva-se'}></ButtonVT>
+          </Stack>
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <h3>INSCREVA-SE</h3>
-          <p>
-            Digite seu email para receber notificações sobre nossas
-            atualizações.
-          </p>
-          <form className="footer_form">
-            <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap">
-              <TextFieldVT label="Email" model="secundary"></TextFieldVT>
-              <ButtonVT model={'primary'} label={'Inscreva-se'}></ButtonVT>
-            </Stack>
-          </form>
+      </>
+    );
+  };
+
+  const desktopFooter = () => {
+    return (
+      <div style={{ display: 'contents' }}>
+        <Grid container style={{ justifyContent: 'space-between' }}>
+          <Grid xs={4} sm={4} md={4}>
+            <HeaderFooter />
+          </Grid>
+          <InfoFooter />
         </Grid>
-      </Grid>
-      <div className="footer_credits">
-        <hr />
-        <p>&copy; 2023 Vital SUS. Todos os direitos reservados.</p>
       </div>
+    );
+  };
+
+  const mobileFooter = () => {
+    return (
+      <ContainerBaseFooter>
+        <HeaderFooter />
+        <HorizontalDivider />
+        <InfoFooter />
+      </ContainerBaseFooter>
+    );
+  };
+
+  return (
+    <footer
+      style={{
+        bottom: 0,
+        width: '100%',
+      }}
+    >
+      <Container>
+        <Content>{displayDesktop ? desktopFooter() : mobileFooter()}</Content>
+        <HorizontalDivider />
+        <Credits>&copy; 2023 Vital SUS. Todos os direitos reservados.</Credits>
+      </Container>
     </footer>
   );
 };
