@@ -1,4 +1,4 @@
-import React, { startTransition } from 'react';
+import React, {useState, startTransition } from 'react';
 import TemplatePage from '../../template/template-page/templatePage';
 import "./Login.css";
 import Box from '@mui/material/Box';
@@ -6,8 +6,28 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
+import {validarEmail, validarSenha} from "../../Utils/validacaoLogin";
 
 const LoginPage = () => {
+  const [loading, setLoading] = useState()
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      setLoading(true)
+      alert("Login")
+      setLoading(false)
+    }
+    catch (err){
+      alert("Não foi possível realizar o Login" + err)
+    }
+   
+  }
+
+  const handleChange = (event) => {
+    console.log('Digitando...', event.target.name, event.target.value)
+  }
+  
   return (
    <TemplatePage>
    <div id="login">
@@ -16,6 +36,7 @@ const LoginPage = () => {
             
             <div className="field">
                 <TextField
+                  onChange={handleChange}
                   helperText="Insira seu Email"
                   id="demo-helper-text-misaligned"
                   label="Email"
@@ -25,6 +46,7 @@ const LoginPage = () => {
         
             <div className="field">
                 <TextField
+                onChange={handleChange}
                 helperText="Insira a sua senha"
                 id="outlined-password-input"
                 label="Senha"
@@ -34,7 +56,12 @@ const LoginPage = () => {
             </div>
 
             <div className="actions">
-                <Button variant="contained">Entrar</Button>
+                <Button 
+                 variant="contained"
+                 type="submit"
+                 onClick={handleSubmit}
+                 //disable={!validandoInput()}
+                 >Entrar</Button>
             </div>
         </form>  
     </div>
