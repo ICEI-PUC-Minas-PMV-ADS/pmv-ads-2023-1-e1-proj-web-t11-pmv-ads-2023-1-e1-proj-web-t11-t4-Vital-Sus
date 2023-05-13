@@ -7,14 +7,25 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 import {validarEmail, validarSenha} from "../../Utils/validacaoLogin";
+import UserService from "../../Services/LoginService";
+
+const userService = new UserService()
 
 const LoginPage = () => {
   const [loading, setLoading] = useState()
+  const [form, setForm] = useState([])
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       setLoading(true)
+      const response = await userService.login(form)
+      console.log("response do login", response)
+      if (response === true) {
+        alert("usuário logado com sucesso")
+        //navegar para home
+      }
+
       alert("Login")
       setLoading(false)
     }
@@ -25,8 +36,15 @@ const LoginPage = () => {
   }
 
   const handleChange = (event) => {
-    console.log('Digitando...', event.target.name, event.target.value)
+    setForm({...form, [event.target.name]: event.target.value})
+
   }
+
+  const validadorImput = () => {
+    return validarEmail(form.email) && validarSenha(form.senha) 
+  }
+
+  console.log("o form está válido", validadorImput())
   
   return (
    <TemplatePage>
@@ -36,6 +54,7 @@ const LoginPage = () => {
             
             <div className="field">
                 <TextField
+                  name= "email"
                   onChange={handleChange}
                   helperText="Insira seu Email"
                   id="demo-helper-text-misaligned"
@@ -46,6 +65,7 @@ const LoginPage = () => {
         
             <div className="field">
                 <TextField
+                name="senha"
                 onChange={handleChange}
                 helperText="Insira a sua senha"
                 id="outlined-password-input"
@@ -60,7 +80,7 @@ const LoginPage = () => {
                  variant="contained"
                  type="submit"
                  onClick={handleSubmit}
-                 //disable={!validandoInput()}
+                 disable={loading === true || validadorImput()}
                  >Entrar</Button>
             </div>
         </form>  
