@@ -2,11 +2,14 @@ import './Cadastro.css';
 import TemplatePage from '../../template/template-page/templatePage';
 import ButtonVT from '../../components/button/button';
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 /*import Grid from '@mui/material/Grid';*/
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import { validarFormulario } from '../../utils/validacao2';
+import { getValue } from '@testing-library/user-event/dist/utils';
 
 const Cadastro = () => {
+  const [usuario, setUsuario] = useState('');
   const [nome, setNome] = useState('');
   const [dataNascimento, setDataNascimento] = useState('');
   const [cpf, setCpf] = useState('');
@@ -46,7 +49,7 @@ const Cadastro = () => {
                 <ButtonVT id="usuario" model={'secundary'} label={'Usuario'}></ButtonVT>
               </Grid>
               <Grid class="funcionario" item xs={12} sm={6} md={6}>
-                <ButtonVT id="funcionario" model={'secundary'} label={'Funcionario'}></ButtonVT>
+                <ButtonVT id="funcionario" model={'secundary'} label={'Funcionario'} onClick={() => setUsuario(true)}></ButtonVT>
               </Grid>
             </Grid>
 

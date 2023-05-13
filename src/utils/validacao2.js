@@ -1,3 +1,5 @@
+
+
 export function validarFormulario() {
     const usuario = document.getElementById('usuario')?.value?.trim();
     const funcionario = document.getElementById('funcionario')?.value?.trim();
@@ -67,7 +69,6 @@ export function validarFormulario() {
 
     const jsonData = JSON.stringify(formData);
 
-    // Criar um link para download do arquivo JSON
     const element = document.createElement('a');
     element.setAttribute('href', 'data:text/json;charset=utf-8,' + encodeURIComponent(jsonData));
     element.setAttribute('download', 'data.json');
@@ -76,5 +77,7 @@ export function validarFormulario() {
     element.click();
     document.body.removeChild(element);
 
-    return true;
+    location.reload();
+
+
 }
