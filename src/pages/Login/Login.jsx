@@ -17,22 +17,18 @@ const LoginPage = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    try {
-      setLoading(true)
-      const response = await userService.login(form)
-      console.log("response do login", response)
-      if (response === true) {
-        alert("usuário logado com sucesso")
-        //navegar para home
-      }
 
-      alert("Login")
-      setLoading(false)
-    }
-    catch (err){
-      alert("Não foi possível realizar o Login" + err)
-    }
-   
+      try {
+        setLoading(true)
+        localStorage.setItem("nome", form.email)
+        localStorage.setItem("senha", form.senha)
+        alert("Login")
+        setLoading(false)
+      }
+      catch (err){
+        alert("Não foi possível realizar o Login" + err)
+      }
+  
   }
 
   const handleChange = (event) => {
