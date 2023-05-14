@@ -4,7 +4,7 @@
 
 # TEMPLATE PADRÃO DO SITE
 
-O layout padrão utilizado nas páginas do site é a base estrutural que define como a informação é organizada e apresentada ao usuário. O layout a ser utilizado tem correspondência com o projeto de interface, conforme ilustado na figura abaixo:
+O layout padrão utilizado nas páginas do site é a base estrutural que define como a informação é organizada e apresentada ao usuário. O layout a ser utilizado tem correspondência com o projeto de interface, conforme ilustrado na figura abaixo:
 
 Figura 1 - Template padrão do site
 ![UserFlow](img/Template_padrão.png)
@@ -20,16 +20,16 @@ O site e composto pelos seguintes layouts:
   - Contato
   - Cadastro de Email para notificações
 
+# FUNCIONALIDADE DO SISTEMA (TELAS)
+
+Nesta seção, são apresentadas as telas correspondentes a cada uma das funcionalidades do sistema, acompanhadas das orientações de acesso. Essas informações são fornecidas para que os usuários possam acessar as diferentes funcionalidades do sistema de forma rápida e eficiente
+
 ## Tela Principal
 
-A tela principal informa aos usuários os objetivos da aplicação, inclui informações importantes sobre o processo de triagem, como instruções para os usuários e benefícios da utilização da aplicação no processo de triagem. Possui links para acesso as demais pagias de login e cadastro no sistema.
+A tela principal informa aos usuários os objetivos da aplicação, inclui informações importantes sobre o processo de triagem, como instruções para os usuários e benefícios da utilização da aplicação no processo de triagem. Possui links para acesso as demais paginas de login e cadastro no sistema.
 
 Figura 2 - Tela Principal
 ![UserFlow]()
-
-# FUNCIONALIDADE DO SISTEMA (TELAS)
-
-Nesta seção, são apresentadas as telas correspondentes a cada uma das funcionalidades do sistema, acompanhadas do respectivo endereço (URL) e outras orientações de acesso. Essas informações são fornecidas para que os usuários possam acessar as diferentes funcionalidades do sistema de forma rápida e eficiente
 
 ## Tela Login (RF-001)
 

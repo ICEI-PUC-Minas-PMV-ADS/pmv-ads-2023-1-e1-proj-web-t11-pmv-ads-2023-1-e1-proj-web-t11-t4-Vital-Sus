@@ -7,32 +7,23 @@ import {validarEmail, validarSenha} from "../../Utils/validacaoLogin";
 
 
 const LoginPage = () => {
-  const [loading, setLoading] = useState()
+
   const [form, setForm] = useState([])
 
-  const formulario = document.querySelector('#formulario');
-
-  function validarUsuario(loginUser, passUser, dados) {
-  
-    return dados.usuarios.some(u => u.usuario === loginUser && u.senha === passUser);
-  }
-   
-    fetch("./dados")
+  //codigo de captura do arquivo JSON gerado no cadastro/*Incompleto
+  /*fetch("./dados")
   .then(response => {
     return response.json()
   })
 
-  .then(jsondata => alert(jsondata))
+  .then(jsondata => alert(jsondata))*/
   
-
+  //Função de captura da ação 'submit' e salvamento das informações no localstorage
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     localStorage.setItem("email", form.email)
     localStorage.setItem("senha", form.senha)
-
-    const loginUser = localStorage.getItem("email")
-    const passUser = localStorage.getItem("senha")
 
   }
 
@@ -40,13 +31,14 @@ const LoginPage = () => {
     setForm({...form, [event.target.name]: event.target.value})
 
   }
-
+  //Verifica se valores inseridos nos campos são válidos
   const validadorImput = () => {
     return validarEmail(form.email) && validarSenha(form.senha) 
   }
 
   console.log("o form está válido", validadorImput())
   
+  //Estrutura da página
   return (
    <TemplatePage>
    <div id="login">
@@ -81,7 +73,6 @@ const LoginPage = () => {
                  variant="contained"
                  type="submit"
                  onClick={handleSubmit}
-                 disable={loading === true || validadorImput()}
                  >Entrar</Button>
             </div>
         </form>  
