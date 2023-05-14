@@ -1,34 +1,41 @@
-import React, {useState, startTransition } from 'react';
+import React, {useState} from 'react';
 import TemplatePage from '../../template/template-page/templatePage';
 import "./Login.css";
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import Grid from '@mui/material/Grid';
+
 import {validarEmail, validarSenha} from "../../Utils/validacaoLogin";
 import UserService from "../../Services/LoginService";
 
-const userService = new UserService()
 
 const LoginPage = () => {
   const [loading, setLoading] = useState()
   const [form, setForm] = useState([])
 
+  const formulario = document.querySelector('#formulario');
+
+  function validarUsuario(loginUser, passUser, dados) {
+  
+    return dados.usuarios.some(u => u.usuario === loginUser && u.senha === passUser);
+  }
+   
+  fetch("./dados")
+.then(response => {
+   return response.json()
+})
+
+.then(jsondata => alert(jsondata))
+  
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-      try {
-        setLoading(true)
-        localStorage.setItem("nome", form.email)
-        localStorage.setItem("senha", form.senha)
-        alert("Login")
-        setLoading(false)
-      }
-      catch (err){
-        alert("Não foi possível realizar o Login" + err)
-      }
-  
+    localStorage.setItem("email", form.email)
+    localStorage.setItem("senha", form.senha)
+
+    const loginUser = localStorage.getItem("email")
+    const passUser = localStorage.getItem("senha")
+
   }
 
   const handleChange = (event) => {
