@@ -3,9 +3,7 @@ import TemplatePage from '../../template/template-page/templatePage';
 import "./Login.css";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-
 import {validarEmail, validarSenha} from "../../Utils/validacaoLogin";
-import UserService from "../../Services/LoginService";
 
 
 const LoginPage = () => {
@@ -19,12 +17,12 @@ const LoginPage = () => {
     return dados.usuarios.some(u => u.usuario === loginUser && u.senha === passUser);
   }
    
-  fetch("./dados")
-.then(response => {
-   return response.json()
-})
+    fetch("./dados")
+  .then(response => {
+    return response.json()
+  })
 
-.then(jsondata => alert(jsondata))
+  .then(jsondata => alert(jsondata))
   
 
   const handleSubmit = async (event) => {
