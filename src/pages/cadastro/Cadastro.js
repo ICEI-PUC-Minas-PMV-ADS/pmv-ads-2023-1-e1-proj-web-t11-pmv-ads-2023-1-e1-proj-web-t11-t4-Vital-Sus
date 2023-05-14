@@ -1,58 +1,20 @@
 import './Cadastro.css';
 import TemplatePage from '../../template/template-page/templatePage';
 import ButtonVT from '../../components/button/button';
-import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-/*import Grid from '@mui/material/Grid';*/
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Unstable_Grid2';
 import { validarFormulario } from '../../utils/validacao2';
 import { getValue } from '@testing-library/user-event/dist/utils';
 
 const Cadastro = () => {
-  const [usuario, setUsuario] = useState('');
-  const [nome, setNome] = useState('');
-  const [dataNascimento, setDataNascimento] = useState('');
-  const [cpf, setCpf] = useState('');
-  const [genero, setGenero] = useState('');
-  const [celular, setCelular] = useState('');
-  const [telefone, setTelefone] = useState('');
-  const [cep, setCep] = useState('');
-  const [logradouro, setLogradouro] = useState('');
-  const [bairro, setBairro] = useState('');
-  const [complemento, setComplemento] = useState('');
-  const [cidade, setCidade] = useState('');
-  const [pais, setPais] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-  const [confirmarSenha, setConfirmarSenha] = useState('');
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aqui você pode enviar os dados do formulário para o servidor ou fazer qualquer outra ação necessária.
-  };
 
   return (
     <>
       <TemplatePage>
         <div class="container cadastro">
           <div>
-            <h1>Cadastrar</h1>
+            <h1>Cadastrar usuário</h1>
           </div>
           <form >
-
-            <Grid
-              container
-              rowspacing={1}
-              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-            >
-              <Grid class="usuario" item xs={12} sm={6} md={6}>
-                <ButtonVT id="usuario" model={'secundary'} label={'Usuario'}></ButtonVT>
-              </Grid>
-              <Grid class="funcionario" item xs={12} sm={6} md={6}>
-                <ButtonVT id="funcionario" model={'secundary'} label={'Funcionario'} onClick={() => setUsuario(true)}></ButtonVT>
-              </Grid>
-            </Grid>
-
             <div>
               <h2>Dados pessoais</h2>
             </div>

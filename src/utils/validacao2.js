@@ -49,22 +49,8 @@ export function validarFormulario() {
 
 
     const formData = {
-        usuario,
-        funcionario,
-        nome,
-        dataNascimento,
-        cpf,
-        genero,
-        celular,
-        telefone,
-        logradouro,
-        bairro,
-        complemento,
-        cidade,
-        pais,
-        email,
-        senha,
-        confirmarSenha
+        usuario, funcionario, nome, dataNascimento, cpf, genero, celular, telefone, logradouro,
+        bairro, complemento, cidade, pais, email, senha, confirmarSenha
     };
 
     const jsonData = JSON.stringify(formData);
