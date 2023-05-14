@@ -1,5 +1,11 @@
 {
     "printWidth": 80,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "prettier.useTabs": false,
+    "tabWidth": 2,
+    "bracketSpacing": true,
+    "proseWrap": "preserve",
+    "arrowParens": "avoid",
+    "endOfLine": "auto"
   }
