@@ -1,22 +1,13 @@
 .container {
-    text-align: center;
-    
+    text-align: center;    
 }
-.usuario{
-    text-align: center;
-   margin:auto
-}
+
 h2{
     text-align: center;
     font-size: medium;
 }
 
-.funcionario{
-    text-align: center;
-    margin: auto;
-  
-   
-}
+
 h1{
     text-align: left;
     text-decoration: underline;

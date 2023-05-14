@@ -1,8 +1,6 @@
 
 
 export function validarFormulario() {
-    const usuario = document.getElementById('usuario')?.value?.trim();
-    const funcionario = document.getElementById('funcionario')?.value?.trim();
     const nome = document.getElementById('nome')?.value?.trim();
     const dataNascimento = document.getElementById('data-nascimento')?.value?.trim();
     const cpf = document.getElementById('cpf')?.value?.trim();
@@ -20,7 +18,7 @@ export function validarFormulario() {
 
 
 
-    if (usuario === '' || funcionario === '' || nome === '' || dataNascimento === '' || cpf === '' || genero === '' || celular === '' || logradouro === '' || bairro === '' || cidade === '' || pais === '' || email === '' || senha === '' || confirmarSenha === '') {
+    if (nome === '' || dataNascimento === '' || cpf === '' || genero === '' || celular === '' || logradouro === '' || bairro === '' || cidade === '' || pais === '' || email === '' || senha === '' || confirmarSenha === '') {
         alert('Por favor, preencha todos os campos obrigatórios');
         return false;
     }
@@ -49,7 +47,7 @@ export function validarFormulario() {
 
 
     const formData = {
-        usuario, funcionario, nome, dataNascimento, cpf, genero, celular, telefone, logradouro,
+        nome, dataNascimento, cpf, genero, celular, telefone, logradouro,
         bairro, complemento, cidade, pais, email, senha, confirmarSenha
     };
 
@@ -62,8 +60,6 @@ export function validarFormulario() {
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
-
-    location.reload();
-
+    window.location.href = './pages/homePage/homePage';
 
 }
