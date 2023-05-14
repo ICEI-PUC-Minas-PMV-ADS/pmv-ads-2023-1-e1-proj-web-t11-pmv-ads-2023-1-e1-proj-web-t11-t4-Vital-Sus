@@ -20,6 +20,24 @@ O site e composto pelos seguintes layouts:
   - Contato
   - Cadastro de Email para notificações
 
+A responsividade da aplicação foi desenvolvida utilizando o frimework React
+
+# Componentes de estilização
+
+Durante o desenvoolvimento da aplicação foi criado componentes de estilização para padronizar as paginas e tornar a experiência do usuário mais agradável. Esses componentes de estilização incluem a definição de cores, fontes, tamanhos de elementos, espaçamento e outros elementos visuais que são aplicados aos:
+
+- **botôes de validação**
+  Figura 2 - Botão validação
+  ![UserFlow]()
+
+- **caixas de inserção de texto**  
+  Figura 3 - Caixa de texto
+  ![UserFlow]()
+
+- **menu de navegação**
+  Figura 4 - Menu
+  ![UserFlow]()
+
 # FUNCIONALIDADE DO SISTEMA (TELAS)
 
 Nesta seção, são apresentadas as telas correspondentes a cada uma das funcionalidades do sistema, acompanhadas das orientações de acesso. Essas informações são fornecidas para que os usuários possam acessar as diferentes funcionalidades do sistema de forma rápida e eficiente
@@ -31,12 +49,28 @@ A tela principal informa aos usuários os objetivos da aplicação, inclui infor
 Figura 2 - Tela Principal
 ![UserFlow]()
 
+**Artefatos gerados da funcionalidade**
+
+- Login.js
+- Login.css
+- Validaçãologin.js
+
 ## Tela Login (RF-001)
 
 Tela permite ao usuário cadastrado acesso ao sistema Vital SUS. Na tela e possível identificar os campos de **Email** e **Senha** para acesso do usuário cadastrado, possui o logo com o nome da aplicação e link para cadastro caso o usuário não possua.
 
 Figura 2 - Tela Login
 ![UserFlow]()
+
+**Requisitos atendidos**
+
+- RF-001
+
+**Artefatos gerados da funcionalidade**
+
+- Login.js
+- Login.css
+- Validaçãologin.js
 
 ## Tela cadastro (RF-003)
 
@@ -56,6 +90,17 @@ A página de cadastro também apresenta a funcionalidade de identificar o tipo d
 
 Figura 2 - Tela Cadastro
 ![UserFlow]()
+
+**Requisitos atendidos**
+
+- RF-003
+
+**Artefatos gerados da funcionalidade**
+
+- Cadastro.Tsx
+- style.ts
+- Validação-cadastro.ts
+- dados.json
 
 ## Tela questionário (RF-004)
 
