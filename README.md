@@ -1,4 +1,4 @@
-# VITAL SUS: Melhorando a prestação de serviços de saúde 
+# VITAL SUS: Melhorando a prestação de serviços de saúde
 
 ![Logo VitalSUS](docs/img/logo-VitalSUS.png)
 
@@ -12,19 +12,53 @@ Esperar muito tempo em hospitais pode ser ruim. Às vezes, os hospitais ficam mu
 
 ## Integrantes
 
-* Julia Chaves Dutra
-* Sandro Shayne Dutra
-* Pedro Celso Mendes
-* Thiago Singulano Machado
-* Dimitri Oliveira Novaes Santos
+- Julia Chaves Dutra
+- Sandro Shayne Dutra
+- Pedro Celso Mendes
+- Thiago Singulano Machado
+- Dimitri Oliveira Novaes Santos
 
 ## Orientador
 
-* Viviane de Almeida Torres
+- Viviâne de Almeida Tôrres
 
 ## Instruções de utilização
 
-~
+Para utilizar este projeto, siga os passos abaixo:
+
+1. Certifique-se de que o Node.js está instalado na sua máquina. Você pode baixá-lo a partir do site oficial: https://nodejs.org
+
+1. Clone este repositório para a sua máquina local.
+
+1. Abra o terminal ou prompt de comando na pasta do projeto e execute o seguinte comando para instalar as dependências: `npm install`
+
+1. Após a instalação das dependências, execute o comando abaixo para iniciar a aplicação: `npm start`
+
+1. A aplicação será iniciada em modo de desenvolvimento. Abra o seu navegador e acesse a URL http://localhost:3000 para visualizar a aplicação.
+
+## Bibliotecas utilizadas
+
+Este projeto utiliza as seguintes bibliotecas:
+
+- **React**: biblioteca JavaScript para construir interfaces de usuário.
+
+- **TypeScript**: extensão do JavaScript que adiciona tipagem estática à linguagem.
+
+- **Styled Components**: biblioteca para estilizar componentes React de forma simples e intuitiva.
+
+- **Material-UI**: biblioteca de componentes React com base no Material Design da Google.
+
+- **React Router**: biblioteca para criar rotas em aplicações React.
+
+- **React Icons**: biblioteca com diversos ícones para serem utilizados em aplicações React.
+
+- **Emotion**: biblioteca para estilização em CSS com suporte a animações e temas.
+
+- **Jest**: framework de testes unitários para JavaScript e TypeScript.
+
+- **React Testing Library**: biblioteca para testes de integração em componentes React.
+
+- **Web Vitals**: biblioteca para medir e reportar métricas de desempenho em aplicações web.
 
 # Documentação
 
@@ -44,12 +78,12 @@ Esperar muito tempo em hospitais pode ser ruim. Às vezes, os hospitais ficam mu
 
 # Hospedagem
 
-* <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus">Repositório público</a> 
+- <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus">Repositório público</a>
 
 # Armazenamento do Código-Fonte
 
-* <a href="src/README.md">Código Fonte</a>
+- <a href="src/README.md">Código Fonte</a>
 
 # Armazenamento da Apresentação
 
-* <a href="presentation/README.md">Apresentação da solução</a>
+- <a href="presentation/README.md">Apresentação da solução</a>
