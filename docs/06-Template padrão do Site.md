@@ -4,7 +4,7 @@
 
 # TEMPLATE PADRÃO DO SITE
 
-O layout padrão utilizado nas páginas do site é a base estrutural que define como a informação é organizada e apresentada ao usuário. O layout a ser utilizado tem correspondência com o projeto de interface, conforme a figura abaixo:
+O layout padrão utilizado nas páginas do site é a base estrutural que define como a informação é organizada e apresentada ao usuário. O layout a ser utilizado tem correspondência com o projeto de interface, conforme ilustado na figura abaixo:
 
 Figura 1 - Template padrão do site
 ![UserFlow](img/Template_padrão.png)
@@ -12,13 +12,11 @@ Figura 1 - Template padrão do site
 O template padrão do site está disponibilizado no GitHub Link= .
 
 O site e composto pelos seguintes layouts:
-Cabeçalho para navegação possibilitando acesso a:
-**Página inicial**
-**Formulário para triagem**
 
-Rodapé (footer) possuindo informações de:
-**Contato**
-**Cadastro de Email para notificações**
+- Cabeçalho para navegação possibilitando acesso a:
+  - **Página inicial**
+  - **Formulário para triagem**
+- Rodapé (footer) possuindo informações de: -**Contato** -**Cadastro de Email para notificações**
 
 ## Tela Principal
 
