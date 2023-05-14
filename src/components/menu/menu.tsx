@@ -3,6 +3,7 @@ import { Drawer, List, ListItem, ListItemText, Divider } from '@mui/material';
 import { HiMenu } from 'react-icons/hi';
 import ButtonVT from '../button/button';
 import { ButtonMenu } from './styles';
+import { useNavigate } from 'react-router-dom';
 
 export interface MenuProps {
   showButton?: boolean;
@@ -22,6 +23,8 @@ const Menu = ({
   const handleClick = () => {
     setOpen(!open);
   };
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -48,7 +51,7 @@ const Menu = ({
                 <ButtonVT
                   label={labelButton}
                   model="primary"
-                  onClick={onClick}
+                  onClick={() => navigate('/cadastro')}
                   fullWidth
                 />
               </ListItem>

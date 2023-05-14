@@ -22,7 +22,7 @@ export const StyledBox = styled(Box)`
  }
 
 
- .stack_endereco {
+ .stack_duplo {
    margin-top: 16px;
  }
 
@@ -44,3 +44,14 @@ export const StyledBox = styled(Box)`
 export const StyledGrid = styled(Grid)`
  justify-content: center;
 `;
+
+export const Container = styled.div`
+margin: 2rem 0;
+display: flex;
+`
+
+export const Form = styled.form`
+display: flex;
+flex-direction: column;
+justify-content: center;
+`

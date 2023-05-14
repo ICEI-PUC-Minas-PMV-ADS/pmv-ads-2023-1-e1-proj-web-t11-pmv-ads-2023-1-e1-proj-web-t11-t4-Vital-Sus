@@ -2,7 +2,7 @@ import React from 'react';
 import ButtonVT from '../../components/button/button';
 import Menu from '../../components/menu/menu';
 import { Content, HeaderContainer, Logo } from './styles';
-import { Box, useMediaQuery } from '@mui/material';
+import { useMediaQuery } from '@mui/material';
 import { retrieveDisplayDesktop } from '../../styles/breakpoints';
 import { useNavigate } from 'react-router-dom';
 
@@ -20,6 +20,7 @@ const Header = ({
   onClick,
 }: HeaderProps) => {
   const displayDesktop = useMediaQuery(retrieveDisplayDesktop());
+  const navigate = useNavigate();
 
   const renderDesktopHeader = (props: HeaderProps) => (
     <>
@@ -29,7 +30,11 @@ const Header = ({
         {showMyAccount && <a href="/perfil">Meu Perfil</a>}
       </nav>
       {showButton && (
-        <ButtonVT model={'primary'} label={labelButton} onClick={onClick} />
+        <ButtonVT
+          model={'primary'}
+          label={labelButton}
+          onClick={() => navigate('/cadastro')}
+        />
       )}
     </>
   );
