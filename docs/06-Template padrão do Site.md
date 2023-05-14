@@ -16,7 +16,9 @@ O site e composto pelos seguintes layouts:
 - Cabeçalho para navegação possibilitando acesso a:
   - **Página inicial**
   - **Formulário para triagem**
-- Rodapé (footer) possuindo informações de: -**Contato** -**Cadastro de Email para notificações**
+- Rodapé (footer) possuindo informações de:
+  - **Contato**
+  - **Cadastro de Email para notificações**
 
 ## Tela Principal
 
