@@ -9,4 +9,4 @@ root.render(
   <React.StrictMode>
     <LoginPage />
   </React.StrictMode>
-);
+)
