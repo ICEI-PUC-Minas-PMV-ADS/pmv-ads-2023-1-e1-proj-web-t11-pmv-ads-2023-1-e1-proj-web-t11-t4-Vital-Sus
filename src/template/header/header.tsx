@@ -24,10 +24,10 @@ const Header = ({
 
   const renderDesktopHeader = (props: HeaderProps) => (
     <>
-      <nav className="nav">
-        <a href="/">Página Inicial</a>
-        <a href="/cadastro">Triagem</a>
-        {showMyAccount && <a href="/perfil">Meu Perfil</a>}
+      <nav className='nav'>
+        <a href='/'>Página Inicial</a>
+        <a href='/cadastro'>Triagem</a>
+        {showMyAccount && <a href='/perfil'>Meu Perfil</a>}
       </nav>
       {showButton && (
         <ButtonVT
@@ -43,7 +43,7 @@ const Header = ({
 
   return (
     <HeaderContainer>
-      <Logo src="img/logo-VitalSUS.png" alt="Logo" className="logo" />
+      <Logo src='img/logo-VitalSUS.png' alt='Logo' className='logo' />
       <Content>
         {displayDesktop
           ? renderDesktopHeader({

@@ -31,17 +31,17 @@ const Menu = ({
       <ButtonMenu onClick={handleClick}>
         <HiMenu />
       </ButtonMenu>
-      <Drawer anchor="right" open={open} onClose={handleClick}>
+      <Drawer anchor='right' open={open} onClose={handleClick}>
         <List>
           <ListItem>
-            <ListItemText primary="Página Inicial" />
+            <ListItemText primary='Página Inicial' />
           </ListItem>
           <ListItem>
-            <ListItemText primary="Triagem" />
+            <ListItemText primary='Triagem' />
           </ListItem>
           {showMyAccount && (
             <ListItem>
-              <ListItemText primary="Meu perfil" />
+              <ListItemText primary='Meu perfil' />
             </ListItem>
           )}
           {showButton && (
@@ -50,7 +50,7 @@ const Menu = ({
               <ListItem>
                 <ButtonVT
                   label={labelButton}
-                  model="primary"
+                  model='primary'
                   onClick={() => navigate('/cadastro')}
                   fullWidth
                 />

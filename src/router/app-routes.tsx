@@ -7,8 +7,8 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/cadastro" element={<CadastroV2 />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/cadastro' element={<CadastroV2 />} />
       </Routes>
     </BrowserRouter>
   );

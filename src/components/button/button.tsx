@@ -12,7 +12,7 @@ export interface ButtonProps {
 const ButtonVT = ({ label, onClick, model, fullWidth }: ButtonProps) => {
   return (
     <StyleButton
-      variant="contained"
+      variant='contained'
       onClick={onClick}
       model={model}
       fullWidth={fullWidth}

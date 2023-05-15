@@ -35,15 +35,15 @@ const Footer = () => {
   const HeaderFooter = () => {
     return (
       <>
-        <ImageLogo src="img/logo-white.png" alt="Logo"></ImageLogo>
+        <ImageLogo src='img/logo-white.png' alt='Logo'></ImageLogo>
         <LinkIcons>
-          <Link href="https://www.facebook.com">
+          <Link href='https://www.facebook.com'>
             <FaFacebook />
           </Link>
-          <Link href="https://www.twitter.com">
+          <Link href='https://www.twitter.com'>
             <FaTwitter />
           </Link>
-          <Link href="https://www.linkedin.com">
+          <Link href='https://www.linkedin.com'>
             <FaLinkedin />
           </Link>
         </LinkIcons>
@@ -56,7 +56,7 @@ const Footer = () => {
       <>
         <Grid xs={4} sm={4} md={4}>
           <TypographFooter
-            variant="h3"
+            variant='h3'
             style={{ fontWeight: 700, paddingBottom: '0.5rem' }}
           >
             {textsFooter.contato.label}
@@ -71,7 +71,7 @@ const Footer = () => {
         </Grid>
         <Grid xs={4} sm={4} md={4}>
           <TypographFooter
-            variant="h3"
+            variant='h3'
             style={{ fontWeight: 700, paddingBottom: '0.5rem' }}
           >
             {textsFooter.inscricao.label}
@@ -79,8 +79,8 @@ const Footer = () => {
           <TypographFooter paragraph>
             {textsFooter.inscricao.paragraph}
           </TypographFooter>
-          <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap">
-            <TextFieldVT label="Email" model="secundary"></TextFieldVT>
+          <Stack direction='row' spacing={2} useFlexGap flexWrap='wrap'>
+            <TextFieldVT label='Email' model='secundary'></TextFieldVT>
             <ButtonVT model={'primary'} label={'Inscreva-se'}></ButtonVT>
           </Stack>
         </Grid>
