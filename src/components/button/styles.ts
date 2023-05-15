@@ -49,7 +49,7 @@ export const StyleButton = styled(Button)<StyleButtonProps>`
     size: auto;
     white-space: nowrap;
 
-    ${({ model }) => model === 'primary' ? primary : {}}
-    ${({ model }) => model === 'secundary' ? secundary : {}}
+    ${({ model }) => (model === 'primary' ? primary : {})}
+    ${({ model }) => (model === 'secundary' ? secundary : {})}
   }
 `;

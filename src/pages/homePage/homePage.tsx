@@ -45,7 +45,7 @@ const HomePage = () => {
       <>
         <ContainerTriagem>
           <Stack
-            direction="row"
+            direction='row'
             spacing={5}
             alignItems={'center'}
             justifyContent={'center'}
@@ -56,7 +56,7 @@ const HomePage = () => {
             }}
           >
             <Item>
-              <TypographyHome variant="h3">
+              <TypographyHome variant='h3'>
                 {textsHome.sectionTriagem.title}
               </TypographyHome>
               <Description>{textsHome.sectionTriagem.description1}</Description>
@@ -65,21 +65,21 @@ const HomePage = () => {
               </Description>
               <ButtonVT
                 label={textsHome.sectionTriagem.labelButton}
-                model="primary"
+                model='primary'
                 onClick={() => navigate('/cadastro')}
               ></ButtonVT>
             </Item>
             <Item>
-              <Image src="img/homePage-img.png" alt="Imagem" />
+              <Image src='img/homePage-img.png' alt='Imagem' />
             </Item>
           </Stack>
         </ContainerTriagem>
         <ContainerInfo>
-          <TypographyHome variant="h3" textAlign={'center'} padding={'2rem 0'}>
+          <TypographyHome variant='h3' textAlign={'center'} padding={'2rem 0'}>
             {textsHome.sectionInfo.title}
           </TypographyHome>
           <Stack
-            direction="row"
+            direction='row'
             spacing={5}
             alignItems={'center'}
             justifyContent={'space-around'}
@@ -90,19 +90,19 @@ const HomePage = () => {
             }}
           >
             <Item>
-              <MdHealthAndSafety className="icon" />
+              <MdHealthAndSafety className='icon' />
               <Description>
                 {textsHome.sectionInfo.description.prevention}
               </Description>
             </Item>
             <Item>
-              <FaHandHoldingHeart className="icon" />
+              <FaHandHoldingHeart className='icon' />
               <Description>
                 {textsHome.sectionInfo.description.confort}
               </Description>
             </Item>
             <Item>
-              <AiFillClockCircle className="icon" />
+              <AiFillClockCircle className='icon' />
               <Description>
                 {textsHome.sectionInfo.description.time}
               </Description>
@@ -118,14 +118,14 @@ const HomePage = () => {
       <>
         <ContainerTriagem>
           <Stack
-            direction="column"
+            direction='column'
             spacing={5}
             alignItems={'center'}
             justifyContent={'center'}
             style={{ margin: '0 auto', padding: '2rem 0' }}
           >
             <Item>
-              <TypographyHome variant="h3">
+              <TypographyHome variant='h3'>
                 {textsHome.sectionTriagem.title}
               </TypographyHome>
               <Description>{textsHome.sectionTriagem.description1}</Description>
@@ -134,7 +134,7 @@ const HomePage = () => {
               </Description>
               <ButtonVT
                 label={textsHome.sectionTriagem.labelButton}
-                model="primary"
+                model='primary'
                 onClick={() => {}}
               ></ButtonVT>
             </Item>
@@ -142,14 +142,14 @@ const HomePage = () => {
         </ContainerTriagem>
         <ContainerInfo>
           <TypographyHome
-            variant="h3"
+            variant='h3'
             textAlign={'center'}
             padding={'2rem 1rem'}
           >
             {textsHome.sectionInfo.title}
           </TypographyHome>
           <Stack
-            direction="column"
+            direction='column'
             spacing={5}
             alignItems={'center'}
             justifyContent={'space-around'}
@@ -160,19 +160,19 @@ const HomePage = () => {
             }}
           >
             <Item>
-              <MdHealthAndSafety className="icon" />
+              <MdHealthAndSafety className='icon' />
               <Description>
                 {textsHome.sectionInfo.description.prevention}
               </Description>
             </Item>
             <Item>
-              <FaHandHoldingHeart className="icon" />
+              <FaHandHoldingHeart className='icon' />
               <Description>
                 {textsHome.sectionInfo.description.confort}
               </Description>
             </Item>
             <Item>
-              <AiFillClockCircle className="icon" />
+              <AiFillClockCircle className='icon' />
               <Description>
                 {textsHome.sectionInfo.description.time}
               </Description>

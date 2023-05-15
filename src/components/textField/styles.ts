@@ -61,6 +61,6 @@ export const StyledTextField = styled(TextField)<StyleTextFieldProps>`
   & .MuiInputBase-root {
     width: 300px;
   }
-  ${({ model }) => model === 'primary' ? primary : {}}
-  ${({ model }) => model === 'secundary' ? secundary : {}}
+  ${({ model }) => (model === 'primary' ? primary : {})}
+  ${({ model }) => (model === 'secundary' ? secundary : {})}
 `;

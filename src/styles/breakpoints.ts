@@ -10,14 +10,14 @@ export const breakpoint = {
   tablet: `${mediaBreakpoints[1]}px`,
   tabletLarge: `${mediaBreakpoints[2]}px`,
   desktop: `${mediaBreakpoints[3]}px`,
-  extraLarge: `${mediaBreakpoints[4]}px`
+  extraLarge: `${mediaBreakpoints[4]}px`,
 };
 
 export const limitBreakpoint = {
   mobile: `${mediaLimitBreakpoints[0]}px`,
   tablet: `${mediaLimitBreakpoints[1]}px`,
   tabletLarge: `${mediaLimitBreakpoints[2]}px`,
-  desktop: `${mediaLimitBreakpoints[3]}px`
+  desktop: `${mediaLimitBreakpoints[3]}px`,
 };
 
 const retrieveMediaBreakpoint = (
@@ -117,7 +117,7 @@ export const retrieveDisplayTabletLarge = () =>
   `(max-width: ${limitBreakpoint.tabletLarge})`;
 
 export const retrieveDisplayTablet = () =>
-`(min-width: ${breakpoint.tabletLarge})`;
+  `(min-width: ${breakpoint.tabletLarge})`;
 
 export const retrieveDisplayDesktop = () =>
   `(min-width: ${breakpoint.desktop})`;

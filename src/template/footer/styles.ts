@@ -1,7 +1,6 @@
-import styled from "@emotion/styled";
-import { Divider, Typography } from "@mui/material";
-import { cssBreakpoints, maxScreen } from "../../styles/breakpoints";
-
+import styled from '@emotion/styled';
+import { Divider, Typography } from '@mui/material';
+import { cssBreakpoints, maxScreen } from '../../styles/breakpoints';
 
 export const HorizontalDivider = styled(Divider)`
   border: 1px inset;
@@ -19,7 +18,7 @@ export const Container = styled.div`
   min-height: 88px;
   height: 100%;
   margin: 0;
-  background-color: #4B4B4B;
+  background-color: #4b4b4b;
   flex-wrap: wrap;
   padding: 32px 32px 8px 32px;
   box-sizing: border-box;
@@ -28,19 +27,14 @@ export const Container = styled.div`
 export const TypographFooter = styled(Typography)`
   font-size: 14px;
   color: #fff;
-`
+`;
 
 export const Content = styled.div`
   display: flex;
   width: 100%;
   max-width: ${maxScreen}px;
 
-  ${cssBreakpoints('padding', [
-    '1rem 0',
-    '1rem 0',
-    '1rem 0',
-    '0 0'
-  ])};
+  ${cssBreakpoints('padding', ['1rem 0', '1rem 0', '1rem 0', '0 0'])};
 `;
 
 export const ContainerBaseFooter = styled.div`
@@ -55,7 +49,7 @@ export const ContainerBaseFooter = styled.div`
 export const ImageLogo = styled.img`
   max-width: 100px;
   margin-bottom: 20px;
-`
+`;
 
 export const LinkIcons = styled.div`
   a {
@@ -66,12 +60,12 @@ export const LinkIcons = styled.div`
   }
 
   a:hover {
-    color: #E2F6FF;
+    color: #e2f6ff;
   }
-`
+`;
 export const Credits = styled.p`
   font-size: 12px;
   text-align: right;
   color: #fff;
   margin: 1rem 0;
-`
+`;
