@@ -1,11 +1,29 @@
 import ButtonVT from '../../components/button/button';
-import React, { useState } from 'react';
-import { Typography, Grid, Alert, Stack } from '@mui/material';
+import React, { useState, ChangeEvent } from 'react';
+import {
+  Typography,
+  Grid,
+  Alert,
+  Stack,
+  MenuItem,
+  TextField,
+} from '@mui/material';
 import TemplatePage from '../../template/template-page/templatePage';
 import { validarFormulario } from '../../utils/validacao-cadastro';
 import { Container, Form } from './styles';
+import TextFieldVT from '../../components/textField/textField';
 
 const Cadastro = () => {
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleOptionChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setSelectedOption(event.target.value);
+  };
+
+  const handleSubmit = () => {
+    validarFormulario(selectedOption);
+  };
+
   return (
     <TemplatePage labelButton="">
       <Container>
@@ -22,23 +40,31 @@ const Cadastro = () => {
 
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="text"
                 id="nome"
-                name="nome"
-                placeholder="Nome-Completo"
+                label="Nome completo"
+                model="primary"
+                required
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="date"
                 id="data-nascimento"
-                name="data-nascimento"
-                placeholder="Data de nascimento"
+                label="Data de nascimento"
+                model="primary"
+                required
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <input type="text" id="cpf" name="cpf" placeholder="cpf" />
+              <TextFieldVT
+                type="number"
+                id="cpf"
+                label="CPF"
+                model="primary"
+                required
+              />
             </Grid>
           </Grid>
           <br></br>
@@ -46,28 +72,36 @@ const Cadastro = () => {
 
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
-              <select id="genero" onChange={() => {}}>
-                <option>Escolha seu Genero</option>
-                <option value={'M'}>Masculino</option>
-                <option value={'F'}>Feminino</option>
-                <option value={'O'}>Outro</option>
-              </select>
+              <TextFieldVT
+                id="genero"
+                onChange={handleOptionChange}
+                select
+                label="Escolha seu Gênero"
+                value={selectedOption}
+                model="primary"
+                required
+              >
+                <MenuItem value="M">Masculino</MenuItem>
+                <MenuItem value="F">Feminino</MenuItem>
+                <MenuItem value="O">Outro</MenuItem>
+              </TextFieldVT>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="tel"
                 id="celular"
-                name="celular"
-                placeholder="Celular"
+                label="Celular"
+                model="primary"
+                required
               />
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="tel"
                 id="telefone"
-                name="telefone"
-                placeholder="Telefone"
+                label="Telefone"
+                model="primary"
               />
             </Grid>
           </Grid>
@@ -79,23 +113,31 @@ const Cadastro = () => {
 
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
-              <input type="text" id="cep" name="cep" placeholder="Cep" />
+              <TextFieldVT
+                type="text"
+                id="cep"
+                label="CEP"
+                model="primary"
+                required
+              />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="text"
                 id="logradouro"
-                name="logradouro"
-                placeholder="Av/Rua"
+                label="Logradouro"
+                model="primary"
+                required
               />
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="text"
                 id="bairro"
-                name="bairro"
-                placeholder="Bairro"
+                label="Bairro"
+                model="primary"
+                required
               />
             </Grid>
           </Grid>
@@ -104,24 +146,31 @@ const Cadastro = () => {
 
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="text"
                 id="complemento"
-                name="complemento"
-                placeholder="Complemento"
+                label="Complemento"
+                model="primary"
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="text"
                 id="cidade"
-                name="cidade"
-                placeholder="Cidade/Estado"
+                label="Cidade/Estado"
+                model="primary"
+                required
               />
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <input type="text" id="pais" name="pais" placeholder="Brasil" />
+              <TextFieldVT
+                type="text"
+                id="pais"
+                label="País"
+                model="primary"
+                required
+              />
             </Grid>
           </Grid>
 
@@ -134,23 +183,31 @@ const Cadastro = () => {
 
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
-              <input type="email" id="email" name="email" placeholder="Email" />{' '}
+              <TextFieldVT
+                type="email"
+                id="email"
+                label="Email"
+                model="primary"
+                required
+              />{' '}
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="password"
                 id="senha"
-                name="senha"
-                placeholder="Senha"
+                label="Senha"
+                model="primary"
+                required
               />
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <input
+              <TextFieldVT
                 type="password"
                 id="confirmar_senha"
-                name="confirmar_senha"
-                placeholder="Confirmar-senha"
+                label="Confirmar senha"
+                model="primary"
+                required
               />
             </Grid>
             <Stack direction={'row'} spacing={5} style={{ margin: '2rem 0' }}>
@@ -162,7 +219,7 @@ const Cadastro = () => {
               <ButtonVT
                 label={'Cadastrar'}
                 model={'primary'}
-                onClick={validarFormulario}
+                onClick={handleSubmit}
               ></ButtonVT>
             </Stack>
           </Grid>

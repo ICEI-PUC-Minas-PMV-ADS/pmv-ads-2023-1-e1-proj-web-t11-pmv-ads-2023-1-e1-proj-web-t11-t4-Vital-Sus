@@ -1,8 +1,8 @@
-export function validarFormulario() {
+export function validarFormulario(generoSelecionado: string) {
     const nome = (document.getElementById('nome') as HTMLInputElement).value.trim();
     const dataNascimento = (document.getElementById('data-nascimento') as HTMLInputElement).value.trim();
     const cpf = (document.getElementById('cpf') as HTMLInputElement).value.trim();
-    const genero = (document.getElementById('genero') as HTMLSelectElement).value.trim();
+    const genero = generoSelecionado.trim();
     const celular = (document.getElementById('celular') as HTMLInputElement).value.trim();
     const telefone = (document.getElementById('telefone') as HTMLInputElement).value.trim();
     const logradouro = (document.getElementById('logradouro') as HTMLInputElement).value.trim();
