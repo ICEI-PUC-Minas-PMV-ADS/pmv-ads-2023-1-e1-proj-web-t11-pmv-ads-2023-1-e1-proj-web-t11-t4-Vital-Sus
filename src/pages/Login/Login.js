@@ -10,15 +10,15 @@ const LoginPage = () => {
 
   const [form, setForm] = useState([])
 
-  //codigo de captura do arquivo JSON gerado no cadastro/*Incompleto
-  /*fetch("./dados")
+ 
+  fetch("./dados")
   .then(response => {
     return response.json()
   })
 
-  .then(jsondata => alert(jsondata))*/
+  .then(jsondata => alert(jsondata))
   
-  //Função de captura da ação 'submit' e salvamento das informações no localstorage
+ 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -31,7 +31,7 @@ const LoginPage = () => {
     setForm({...form, [event.target.name]: event.target.value})
 
   }
-  //Verifica se valores inseridos nos campos são válidos
+
   const validadorImput = () => {
     return validarEmail(form.email) && validarSenha(form.senha) 
   }
