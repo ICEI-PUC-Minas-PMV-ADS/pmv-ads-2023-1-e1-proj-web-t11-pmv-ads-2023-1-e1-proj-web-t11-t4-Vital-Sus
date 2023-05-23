@@ -4,27 +4,49 @@ import "./Login.css";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {validarEmail, validarSenha} from "../../Utils/validacaoLogin";
+import  {obterJSON} from "../../Services/obterJSON";
+
 
 
 const LoginPage = () => {
 
   const [form, setForm] = useState([])
 
+  const dataUser = "/dados.json";
+  let dadosUser = obterJSON(dataUser);
+  console.log(dadosUser)
  
-  fetch("./dados")
-  .then(response => {
-    return response.json()
-  })
-
-  .then(jsondata => alert(jsondata))
   
+    if (dadosUser) {
  
+
+      const emailStorage = localStorage.getItem("email")
+      const senhaStorage = localStorage.getItem("senha")
+      
+      if (emailStorage) {      
+
+          if (JSON.stringify(dadosUser.email) === JSON.stringify(emailStorage)) {
+            if (senhaStorage) {
+              if (JSON.stringify(dadosUser.senha) === senhaStorage){
+                console.log("dados são iguais")
+                alert("Login autorizado")
+              }
+            }
+          console.log('O');
+          } else {
+          console.log('Os dados são diferentes!');
+          }
+      } 
+ 
+    }
+  
+    
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-    localStorage.setItem("email", form.email)
-    localStorage.setItem("senha", form.senha)
-
+ 
+      localStorage.setItem("email", form.email)
+      localStorage.setItem("senha", form.senha)
+      alert("dados armazenados no localstorage")
   }
 
   const handleChange = (event) => {
@@ -38,7 +60,6 @@ const LoginPage = () => {
 
   console.log("o form está válido", validadorImput())
   
-  //Estrutura da página
   return (
    <TemplatePage>
    <div id="login">
@@ -89,8 +110,8 @@ const LoginPage = () => {
        </div>
     </div>
     </TemplatePage>
-  );
-};
+  )
+}
 
 
 export default LoginPage;

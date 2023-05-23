@@ -1,0 +1,62 @@
+[
+  {
+    "nome": "Usuário 1",
+    "dataNascimento": "01/02/1990",
+    "email": "usuario1@example.com",
+    "senha": "senha1"
+  },
+  {
+    "nome": "Usuário 2",
+    "dataNascimento": "05/06/1985",
+    "email": "usuario2@example.com",
+    "senha": "senha2"
+  },
+  {
+    "nome": "Usuário 3",
+    "dataNascimento": "10/11/1992",
+    "email": "usuario3@example.com",
+    "senha": "senha3"
+  },
+  {
+    "nome": "Usuário 4",
+    "dataNascimento": "15/04/1988",
+    "email": "usuario4@example.com",
+    "senha": "senha4"
+  },
+  {
+    "nome": "Usuário 5",
+    "dataNascimento": "20/09/1995",
+    "email": "usuario5@example.com",
+    "senha": "senha5"
+  },
+  {
+    "nome": "Usuário 6",
+    "dataNascimento": "25/12/1983",
+    "email": "usuario6@example.com",
+    "senha": "senha6"
+  },
+  {
+    "nome": "Usuário 7",
+    "dataNascimento": "03/08/1991",
+    "email": "usuario7@example.com",
+    "senha": "senha7"
+  },
+  {
+    "nome": "Usuário 8",
+    "dataNascimento": "12/07/1986",
+    "email": "usuario8@example.com",
+    "senha": "senha8"
+  },
+  {
+    "nome": "Usuário 9",
+    "dataNascimento": "09/10/1994",
+    "email": "usuario9@example.com",
+    "senha": "senha9"
+  },
+  {
+    "nome": "Usuário 10",
+    "dataNascimento": "07/03/1989",
+    "email": "usuario10@example.com",
+    "senha": "senha10"
+  }
+]
