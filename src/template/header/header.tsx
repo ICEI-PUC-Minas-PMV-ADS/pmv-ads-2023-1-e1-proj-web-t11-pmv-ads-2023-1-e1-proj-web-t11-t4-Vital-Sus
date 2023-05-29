@@ -33,7 +33,7 @@ const Header = ({
         <ButtonVT
           model={'primary'}
           label={labelButton}
-          onClick={() => navigate('/cadastro')}
+          onClick={() => navigate('/Login')}
         />
       )}
     </>
