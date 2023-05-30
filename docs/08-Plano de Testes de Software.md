@@ -1,29 +1,44 @@
-# Plano de Testes de Software
-
-| **Caso de teste**     | **Realizar acesso ao sistema atraves da tela Login**                                               |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| Requisitos associados | RF-O01 Site deve apresentar uma página onde o usuário faça o login com as credenciais cadastradas. |
-| Objetivo do teste     | Verificar a autenticação do usuário cadastrado                                                     |
-| Passos                | - Acessar a pagina de Login                                                                        |
-|                       | - Informar o Email cadastrado                                                                      |
-|                       | - Informar a senha cadastrada                                                                      |
-|                       | - Confirmar clicando no botão Entrar                                                               |
-| Critério de êxito     | - O usuário deve ser redirecionado a página "homePage" da aplicação                                |
-|                       | - Durante o Login devem ser carregados os dados do usuário para o local storage do servidor        |
-
-|RF-002| O site deve apresentar uma página onde o profissional de saúde responsável pela triagem faça um login com suas credenciais. | ALTA |
-|RF-003| O site deve possuir funcionalidade de cadastro de novo usuários. | ALTA |
-|RF-004| O site deve permitir ao usuário que ele responda um questionário preestabelecido de triagem. | ALTA |
-|RF-005| O site deve permitir que o profissional de saúde tenha acesso aos questionários dos usuários. | ALTA |
-|RF-006| O site deve permitir que o profissional de saúde marque a consulta com a especificação e local correto do usuário. | ALTA |
-|RF-007| O site deve permitir o usuário visualizar as informações de sua marcação da consulta. | MÉDIA |
-|RF-008| O site deve permitir que o profissional de saúde verifique a agenda das unidades de saúde. | MÉDIA |
-
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
 Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
 Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+
+# Plano de Testes de Software
+
+Os testes de software realizados utilizaram o modelo "caixa preta". O modelo "caixa preta" é uma abordagem de teste que se concentra na funcionalidade externa do software, sem considerar sua estrutura interna ou o conhecimento do código-fonte. Nesse tipo de teste, o software é avaliado com base em sua entrada e saída, sem ter acesso ao funcionamento interno do programa.
+
+## Funcionalidade Tela Login
+
+| **Caso de teste 1**   | **RF-001 Realizar acesso ao sistema através da tela Login**                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| Requisitos associados | RF-O01 Site deve apresentar uma página onde o usuário faça o login com as credenciais cadastradas. |
+| Objetivo do teste     | Verificar a autenticação do usuário cadastrado                                                     |
+| Passos                | 1. Acessar a pagina de Login                                                                       |
+|                       | 2. Informar o Email cadastrado                                                                     |
+|                       | 3. Informar a senha cadastrada                                                                     |
+|                       | 4. Confirmar clicando no botão Entrar                                                              |
+| Critério de êxito     | - O usuário deve ser redirecionado a página "homePage" da aplicação                                |
+
+| **Caso de teste 2**   | **RF-001 Verificar validação dos campos email e senha**                                            |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| Requisitos associados | RF-O01 Site deve apresentar uma página onde o usuário faça o login com as credenciais cadastradas. |
+| Objetivo do teste     | Verificar se os campos "Email" e "senha" foram preenchidos com valores válidos                     |
+| Passos                | 1. Acessar a pagina de Login                                                                       |
+|                       | 2. Informar um Email Inválido sem os caracteres "@" "."                                            |
+|                       | 3. Informar uma senha inválida, com comprimento inferior a 8 dígitos                               |
+|                       | 4. Confirmar clicando no botão "Entrar"                                                            |
+| Critério de êxito     | - O usuário deve ser informado de que os campos não são válidos.                                   |
+
+| **Caso de teste 3**   | **RF-001 Verificar autenticação do usuário através dos campos "Email" e "senha"**                   |
+| --------------------- | --------------------------------------------------------------------------------------------------- |
+| Requisitos associados | RF-O01 Site deve apresentar uma página onde o usuário faça o login com as credenciais cadastradas.  |
+| Objetivo do teste     | Verificar os campos "Email" e "Senha" digitados são cadastrados na aplicação                        |
+| Passos                | 1. Acessar a pagina de Login                                                                        |
+|                       | 2. Informar um Email Inválido não cadastrado no registro de usuários "./public/dados.json"          |
+|                       | 3. Informar uma senha inválida, não cadastrada no registro de usuários "./public/dados.json"        |
+|                       | 4. Confirmar clicando no botão "Entrar"                                                             |
+| Critério de êxito     | - O usuário deve ser informado de que os campos "Email" e "senha" não foram digitados corretamente" |
 
 ## Ferramentas de Testes (Opcional)
 
