@@ -1,16 +1,15 @@
 import ButtonVT from '../../components/button/button';
 import React, { useState, ChangeEvent } from 'react';
-import {
-  Typography,
-  Grid,
-  Alert,
-  Stack,
-  MenuItem,
-  TextField,
-} from '@mui/material';
+import { Typography, Grid, Alert, Stack, MenuItem } from '@mui/material';
 import TemplatePage from '../../template/template-page/templatePage';
 import { validarFormulario } from '../../utils/validacao-cadastro';
-import { Container, Form } from './styles';
+import {
+  Container,
+  StyledBox,
+  StyledGrid,
+  TypographCad,
+  TypographTitle,
+} from './styles';
 import TextFieldVT from '../../components/textField/textField';
 
 const Cadastro = () => {
@@ -27,18 +26,10 @@ const Cadastro = () => {
   return (
     <TemplatePage labelButton=''>
       <Container>
-        <Form>
-          <Typography
-            variant='h4'
-            style={{ textDecoration: 'underline', paddingBottom: '2rem' }}
-          >
-            Cadastrar
-          </Typography>
-          <div>
-            <h2>Dados pessoais</h2>
-          </div>
-
-          <Grid container spacing={2}>
+        <TypographCad>Cadastrar</TypographCad>
+        <StyledBox>
+          <TypographTitle>Dados Pessoais</TypographTitle>
+          <StyledGrid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
               <TextFieldVT
                 type='text'
@@ -54,6 +45,7 @@ const Cadastro = () => {
                 id='data-nascimento'
                 label='Data de nascimento'
                 model='primary'
+                InputLabelProps={{ shrink: true, required: true }}
                 required
               />
             </Grid>
@@ -66,11 +58,8 @@ const Cadastro = () => {
                 required
               />
             </Grid>
-          </Grid>
-          <br></br>
-          <br></br>
-
-          <Grid container spacing={2}>
+          </StyledGrid>
+          <StyledGrid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
               <TextFieldVT
                 id='genero'
@@ -104,14 +93,9 @@ const Cadastro = () => {
                 model='primary'
               />
             </Grid>
-          </Grid>
-          <br></br>
-          <div>
-            <h2>Endereço</h2>
-          </div>
-          <br></br>
-
-          <Grid container spacing={2}>
+          </StyledGrid>
+          <TypographTitle>Endereço</TypographTitle>
+          <StyledGrid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
               <TextFieldVT
                 type='text'
@@ -140,11 +124,8 @@ const Cadastro = () => {
                 required
               />
             </Grid>
-          </Grid>
-          <br></br>
-          <br></br>
-
-          <Grid container spacing={2}>
+          </StyledGrid>
+          <StyledGrid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
               <TextFieldVT
                 type='text'
@@ -172,16 +153,9 @@ const Cadastro = () => {
                 required
               />
             </Grid>
-          </Grid>
-
-          <br></br>
-          <div>
-            <h2>Login</h2>
-          </div>
-
-          <br></br>
-
-          <Grid container spacing={2}>
+          </StyledGrid>
+          <TypographTitle>Login</TypographTitle>
+          <StyledGrid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
               <TextFieldVT
                 type='email'
@@ -210,20 +184,24 @@ const Cadastro = () => {
                 required
               />
             </Grid>
-            <Stack direction={'row'} spacing={5} style={{ margin: '2rem 0' }}>
-              <Alert severity='info'>
-                Essas informações serão utilizadas apenas para fins de
-                identificação e segurança, de acordo com as políticas de
-                privacidade da nossa empresa.
-              </Alert>
-              <ButtonVT
-                label={'Cadastrar'}
-                model={'primary'}
-                onClick={handleSubmit}
-              ></ButtonVT>
-            </Stack>
-          </Grid>
-        </Form>
+          </StyledGrid>
+          <Stack
+            direction={'row'}
+            spacing={5}
+            style={{ margin: '2rem 0', alignItems: 'center' }}
+          >
+            <Alert severity='info'>
+              Essas informações serão utilizadas apenas para fins de
+              identificação e segurança, de acordo com as políticas de
+              privacidade da nossa empresa.
+            </Alert>
+            <ButtonVT
+              label={'Cadastrar'}
+              model={'primary'}
+              onClick={handleSubmit}
+            ></ButtonVT>
+          </Stack>
+        </StyledBox>
       </Container>
     </TemplatePage>
   );

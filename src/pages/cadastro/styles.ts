@@ -1,50 +1,35 @@
 import styled from '@emotion/styled';
-import { Box, Grid } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 
 export const StyledBox = styled(Box)`
-  margin: 70px 24px;
   justify-content: center;
-  align-itmes: center;
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 16px;
-  }
-
-  .stack_duplo {
-    margin-top: 16px;
-  }
-
-  .stack_buttons {
-    justify-content: center;
-  }
-
-  .stack_end {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
+  align-items: center;
 `;
 
 export const StyledGrid = styled(Grid)`
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
 `;
 
-export const Container = styled.div`
-  margin: 2rem 0;
-  display: flex;
+export const Container = styled.div``;
+
+export const TypographTitle = styled(Typography)`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1.5rem;
 `;
 
-export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const TypographCad = styled(Typography)`
+  color: #005f89;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e5f6fd;
+  border-radius: 4px;
 `;
