@@ -1,3 +1,5 @@
+import Alert from '@mui/material/Alert';
+
 export async function aprovarLogin(email: string, senha: string) {
   const validarEmail = (email: string): boolean => {
     return (
@@ -36,6 +38,8 @@ export async function aprovarLogin(email: string, senha: string) {
           alert('Email ou senha inválidos');
         }
       }
+    }else{
+      alert("Campos email ou senha inválidos")
     }
   } catch (error) {
     console.error('Erro na requisição: ', error);
