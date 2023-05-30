@@ -1,14 +1,15 @@
 # Plano de Testes de Software
 
-**| Caso de teste | Realizar acesso ao sistema atraves da tela Login |**
-| Requisitos associados | RF-O01 Site deve apresentar uma página onde o usuário faça o login com as credenciais cadastradas.|
-| Objetivo do teste | Verificar a autenticação do usuário cadastrado |
-| Passos | - Acessar a pagina de Login |
-| | - Informar o Email cadastrado |
-| | - Informar a senha cadastrada |
-| | - Confirmar clicando no botão Entrar |
-| Critério de êxito | - O usuário deve ser redirecionado a página "homePage" da aplicação |
-| | - Durante o Login devem ser carregados os dados do usuário para o local storage do servidor |
+| **Caso de teste**     | **Realizar acesso ao sistema atraves da tela Login**                                               |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| Requisitos associados | RF-O01 Site deve apresentar uma página onde o usuário faça o login com as credenciais cadastradas. |
+| Objetivo do teste     | Verificar a autenticação do usuário cadastrado                                                     |
+| Passos                | - Acessar a pagina de Login                                                                        |
+|                       | - Informar o Email cadastrado                                                                      |
+|                       | - Informar a senha cadastrada                                                                      |
+|                       | - Confirmar clicando no botão Entrar                                                               |
+| Critério de êxito     | - O usuário deve ser redirecionado a página "homePage" da aplicação                                |
+|                       | - Durante o Login devem ser carregados os dados do usuário para o local storage do servidor        |
 
 |RF-002| O site deve apresentar uma página onde o profissional de saúde responsável pela triagem faça um login com suas credenciais. | ALTA |
 |RF-003| O site deve possuir funcionalidade de cadastro de novo usuários. | ALTA |
