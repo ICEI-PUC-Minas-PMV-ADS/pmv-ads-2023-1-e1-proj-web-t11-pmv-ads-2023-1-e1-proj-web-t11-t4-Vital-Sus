@@ -33,6 +33,13 @@ const secundary = css`
   }
 `;
 
+const disabledStyles = css`
+  && {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+`;
+
 type StyleButtonProps = ButtonProps & {
   model?: 'primary' | 'secundary';
 };
@@ -51,5 +58,6 @@ export const StyleButton = styled(Button)<StyleButtonProps>`
 
     ${({ model }) => (model === 'primary' ? primary : {})}
     ${({ model }) => (model === 'secundary' ? secundary : {})}
+    ${({ disabled }) => (disabled ? disabledStyles : {})}
   }
 `;

@@ -66,7 +66,7 @@ const HomePage = () => {
               <ButtonVT
                 label={textsHome.sectionTriagem.labelButton}
                 model='primary'
-                onClick={() => navigate('/cadastro')}
+                onClick={() => navigate('/triagem')}
               ></ButtonVT>
             </Item>
             <Item>

@@ -1,0 +1,20 @@
+import { Tabs, Typography } from '@mui/material';
+import styled from 'styled-components';
+import { cssBreakpoints } from '../../styles/breakpoints';
+
+export const ContainerTabs = styled.div`
+  display: flex;
+`;
+
+export const TabsTriagem = styled(Tabs)`
+  background-color: #d9d9d9;
+`;
+
+export const TypographyTriagem = styled(Typography)`
+  font-family: 'Belleza';
+  font-style: normal;
+  font-weight: 400;
+  background-color: #d9d9d9;
+  text-align: center;
+  padding: 0.5rem 0;
+`;
