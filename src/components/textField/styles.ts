@@ -53,8 +53,35 @@ const secundary = css({
   },
 });
 
+const tertiary = css({
+  '& label': {
+    color: '#005F89',
+    fontSize: '14px',
+  },
+  '& label.Mui-focused': {
+    color: '#005F89',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottomColor: '#005F89',
+  },
+  '& .MuiInputBase-input': {
+    color: '#005F89',
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: '#005F89',
+    },
+    '&:hover fieldset': {
+      borderColor: '#005F89',
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: '#005F89',
+    },
+  },
+});
+
 type StyleTextFieldProps = TextFieldProps & {
-  model?: 'primary' | 'secundary';
+  model?: 'primary' | 'secundary' | 'tertiary';
 };
 
 export const StyledTextField = styled(TextField)<StyleTextFieldProps>`
@@ -63,4 +90,5 @@ export const StyledTextField = styled(TextField)<StyleTextFieldProps>`
   }
   ${({ model }) => (model === 'primary' ? primary : {})}
   ${({ model }) => (model === 'secundary' ? secundary : {})}
+  ${({ model }) => (model === 'tertiary' ? tertiary : {})}
 `;

@@ -3,7 +3,7 @@ import { StyledTextField } from './styles';
 import { BaseTextFieldProps } from '@mui/material';
 
 export interface TextFieldVTProps extends BaseTextFieldProps {
-  model?: 'primary' | 'secundary';
+  model?: 'primary' | 'secundary' | 'tertiary';
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
