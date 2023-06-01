@@ -22,3 +22,12 @@ export const TypographyTriagem = styled(Typography)`
 export const StyleItem = styled(Item)`
   margin: 0.5rem 0;
 `;
+
+export const StyleTypography = styled(Typography)`
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  color: #005f89;
+`;
