@@ -1,5 +1,3 @@
-import { Router } from "react-router-dom";
-
 export async function aprovarLogin(email: string, senha: string) {
   const validarEmail = (email: string): boolean => {
     return (
@@ -9,6 +7,7 @@ export async function aprovarLogin(email: string, senha: string) {
       email.toString().includes('.')
     );
   };
+
 
   const validarSenha = (senha: string): boolean => {
     return senha != null && senha != undefined && senha.toString().length > 8;
