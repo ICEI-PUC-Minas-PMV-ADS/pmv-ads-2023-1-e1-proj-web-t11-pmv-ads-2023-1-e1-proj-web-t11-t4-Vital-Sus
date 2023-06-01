@@ -13,6 +13,7 @@ export function validarFormulario(generoSelecionado: string) {
   const telefone = (
     document.getElementById('telefone') as HTMLInputElement
   ).value.trim();
+  const cep = (document.getElementById('cep') as HTMLInputElement).value.trim();
   const logradouro = (
     document.getElementById('logradouro') as HTMLInputElement
   ).value.trim();
@@ -44,6 +45,7 @@ export function validarFormulario(generoSelecionado: string) {
     cpf === '' ||
     genero === '' ||
     celular === '' ||
+    cep === '' ||
     logradouro === '' ||
     bairro === '' ||
     cidade === '' ||
@@ -77,23 +79,28 @@ export function validarFormulario(generoSelecionado: string) {
 
   // Ofusca a senha antes de armazená-la no JSON
   const senhaOfuscada = senha.replace(/./g, '*');
-  const confimarSenhaOfuscada = confirmarSenha.replace(/./g, '*');
 
   const formData = {
-    nome,
-    dataNascimento,
-    cpf,
-    genero,
-    celular,
-    telefone,
-    logradouro,
-    bairro,
-    complemento,
-    cidade,
-    pais,
-    email,
-    senha: senhaOfuscada,
-    confirmarSenha: confimarSenhaOfuscada,
+    dados: {
+      nome: nome,
+      dataNascimento: dataNascimento,
+      CPF: cpf,
+      genero: genero,
+      celular: celular,
+      telefone: telefone,
+    },
+    endereco: {
+      CEP: cep,
+      pais: pais,
+      cidadeEstado: cidade,
+      bairro: bairro,
+      logradouro: logradouro,
+      complemento: complemento,
+    },
+    login: {
+      email: email,
+      senha: senhaOfuscada,
+    },
   };
 
   const jsonData = JSON.stringify(formData);

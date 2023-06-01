@@ -26,7 +26,7 @@ const Header = ({
     <>
       <nav className='nav'>
         <a href='/'>Página Inicial</a>
-        <a href='/cadastro'>Triagem</a>
+        <a href='/triagem'>Triagem</a>
         {showMyAccount && <a href='/perfil'>Meu Perfil</a>}
       </nav>
       {showButton && (

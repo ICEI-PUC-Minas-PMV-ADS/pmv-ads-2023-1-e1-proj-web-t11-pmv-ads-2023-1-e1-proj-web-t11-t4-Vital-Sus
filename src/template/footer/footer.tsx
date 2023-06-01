@@ -92,7 +92,7 @@ const Footer = () => {
     return (
       <div style={{ display: 'contents' }}>
         <Grid container style={{ justifyContent: 'space-between' }}>
-          <Grid xs={4} sm={4} md={4}>
+          <Grid>
             <HeaderFooter />
           </Grid>
           <InfoFooter />
