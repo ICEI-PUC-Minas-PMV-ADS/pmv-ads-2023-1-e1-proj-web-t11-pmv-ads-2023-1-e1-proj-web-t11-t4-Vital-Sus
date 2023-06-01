@@ -1,6 +1,6 @@
 import { Tabs, Typography } from '@mui/material';
 import styled from 'styled-components';
-import { cssBreakpoints } from '../../styles/breakpoints';
+import { Item } from '../homePage/styles';
 
 export const ContainerTabs = styled.div`
   display: flex;
@@ -17,4 +17,8 @@ export const TypographyTriagem = styled(Typography)`
   background-color: #d9d9d9;
   text-align: center;
   padding: 0.5rem 0;
+`;
+
+export const StyleItem = styled(Item)`
+  margin: 0.5rem 0;
 `;
