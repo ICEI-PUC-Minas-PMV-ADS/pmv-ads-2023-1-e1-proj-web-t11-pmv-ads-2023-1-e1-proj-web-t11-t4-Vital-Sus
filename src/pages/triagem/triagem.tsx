@@ -6,6 +6,7 @@ import ButtonVT from '../../components/button/button';
 import TextFieldVT from '../../components/textField/textField';
 import CheckboxVT from '../../components/checkbox/checkbox';
 import RadioButtonVT from '../../components/radioButton/radioButton';
+import TriagemInfo from './pagesTriagem/triagemInfo';
 
 const Triagem = () => {
   const [activeTab, setActiveTab] = useState(0); // Estado para controlar a tab ativa
@@ -48,7 +49,7 @@ const Triagem = () => {
       >
         {activeTab === 0 && (
           <div>
-            <p>Informações</p>
+            <TriagemInfo />
           </div>
         )}
 
