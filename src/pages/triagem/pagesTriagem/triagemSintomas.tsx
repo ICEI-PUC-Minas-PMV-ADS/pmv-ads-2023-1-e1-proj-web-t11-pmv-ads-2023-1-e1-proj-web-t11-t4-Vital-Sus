@@ -1,3 +1,4 @@
+
 import { Stack } from '@mui/material';
 import React, { useState } from 'react';
 import CheckboxVT from '../../../components/checkbox/checkbox';
@@ -36,7 +37,7 @@ const TriagemSintomas = () => {
         </Stack>
         <Stack direction={'column'}>
           <CheckboxVT label='Falta de Ar'></CheckboxVT>
-          <CheckboxVT label='Sonolência'></CheckboxVT>
+          <CheckboxVT label='Sonolência'></CheckboxVT>  
         </Stack>
       </Stack>
       <TextFieldVT
