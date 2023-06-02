@@ -18,15 +18,14 @@ const LoginPage = () => {
     senha: string;
   }
 
-  const handleSubmit = async (
-  ) => {
+  const handleSubmit = async () => {
     aprovarLogin(form.email, form.senha);
   };
 
   const validadorImput = (): boolean => {
-    return validarEmail(form.email) && validarSenha(form.senha) 
-  }
-  console.log("o form está válido", validadorImput())
+    return validarEmail(form.email) && validarSenha(form.senha);
+  };
+  console.log('o form está válido', validadorImput());
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [event.target.name]: event.target.value });
@@ -41,7 +40,7 @@ const LoginPage = () => {
             <div className='field'>
               <TextFieldVT
                 name='email'
-                model="primary"
+                model='primary'
                 onChange={handleChange}
                 helperText='Insira seu Email'
                 label='Email'
@@ -53,7 +52,7 @@ const LoginPage = () => {
             <div className='field'>
               <TextFieldVT
                 name='senha'
-                model="primary"
+                model='primary'
                 onChange={handleChange}
                 helperText='Insira a sua senha'
                 label='Senha'
@@ -61,12 +60,12 @@ const LoginPage = () => {
                 autoComplete='current-password'
               />
             </div>
-              <ButtonVT  
-                model="primary"
-                onClick={handleSubmit}
-                label={"Entrar"}
-                disabled={!validadorImput()}
-                ></ButtonVT>
+            <ButtonVT
+              model='primary'
+              onClick={handleSubmit}
+              label={'Entrar'}
+              disabled={!validadorImput()}
+            ></ButtonVT>
           </form>
         </Login>
 
@@ -79,7 +78,7 @@ const LoginPage = () => {
           <Link>
             <p>
               {' '}
-              Ainda não é cadastrado? 
+              Ainda não é cadastrado?
               <a href='./cadastro'>Clique aqui</a>
             </p>
           </Link>
