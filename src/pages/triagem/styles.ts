@@ -1,4 +1,4 @@
-import { Tabs, Typography } from '@mui/material';
+import { Snackbar, Tabs, Typography } from '@mui/material';
 import styled from 'styled-components';
 import { Item } from '../homePage/styles';
 
@@ -21,4 +21,8 @@ export const TypographyTriagem = styled(Typography)`
 
 export const StyleItem = styled(Item)`
   margin: 0.5rem 0;
+`;
+
+export const StyleTypography = styled(Typography)`
+  color: #005f89;
 `;
