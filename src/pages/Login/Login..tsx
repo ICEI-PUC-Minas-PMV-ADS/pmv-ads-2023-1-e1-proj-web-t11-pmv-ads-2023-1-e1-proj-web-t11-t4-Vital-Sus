@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import TemplatePage from '../../template/template-page/templatePage';
+import { validarEmail, validarSenha } from '../../utils/validadorInput';
 import { ContainerPage, Login, ContainerLogo, Link, Image } from './Style';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
 import { Container } from '@mui/material';
 import { aprovarLogin } from '../../utils/validacaoLogin';
+import ButtonVT from '../../components/button/button';
+import TextFieldVT from '../../components/textField/textField';
 
 const LoginPage = () => {
   const [form, setForm] = useState<FormData>({
@@ -18,11 +19,14 @@ const LoginPage = () => {
   }
 
   const handleSubmit = async (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
-    event.preventDefault();
     aprovarLogin(form.email, form.senha);
   };
+
+  const validadorImput = (): boolean => {
+    return validarEmail(form.email) && validarSenha(form.senha) 
+  }
+  console.log("o form está válido", validadorImput())
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [event.target.name]: event.target.value });
@@ -35,33 +39,34 @@ const LoginPage = () => {
           <h1 className='title'>Entrar</h1>
           <form>
             <div className='field'>
-              <TextField
+              <TextFieldVT
                 name='email'
+                model="primary"
                 onChange={handleChange}
                 helperText='Insira seu Email'
-                id='demo-helper-text-misaligned'
                 label='Email'
                 type='email'
+                required
               />
             </div>
 
             <div className='field'>
-              <TextField
+              <TextFieldVT
                 name='senha'
+                model="primary"
                 onChange={handleChange}
                 helperText='Insira a sua senha'
-                id='outlined-password-input'
                 label='Senha'
                 type='password'
                 autoComplete='current-password'
               />
             </div>
-
-            <div className='actions'>
-              <Button variant='contained' type='submit' onClick={handleSubmit}>
-                Entrar
-              </Button>
-            </div>
+              <ButtonVT  
+                model="primary"
+                onClick={handleSubmit}
+                label={"Entrar"}
+                disabled={!validadorImput()}
+                ></ButtonVT>
           </form>
         </Login>
 

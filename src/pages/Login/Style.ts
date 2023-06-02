@@ -1,25 +1,28 @@
 import styled from '@emotion/styled' 
+import { StyledTextField } from '../../components/textField/styles';
 
 export const ContainerPage = styled.div` 
     width: 100%
     `;
 
 export const Login = styled.div`
-    display:in inline;
+    display: inline;
     position:absolute;
     background-color: white;
+    padding: 20px;
     float: left;
     top:  300px;
     left: 25px;
 
-.field{
-    padding-top: 20px;
-}
+    & > * {
+        padding-top: 30px;
+    }
 
-.actions{
-    padding-top: 20px;
-}
+    .form {
+        padding-top: 30px;
+    }
 `;
+
 
 export const ContainerLogo = styled.div`
     background-image: url(/img/LoginPage-img.png);
