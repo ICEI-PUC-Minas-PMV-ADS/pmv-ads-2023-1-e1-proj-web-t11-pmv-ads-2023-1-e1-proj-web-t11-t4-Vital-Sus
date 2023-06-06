@@ -1,41 +1,39 @@
-import styled from '@emotion/styled' 
+import styled from '@emotion/styled';
 import { StyledTextField } from '../../components/textField/styles';
 
-export const ContainerPage = styled.div` 
-    width: 100%
-    `;
-
-export const Login = styled.div`
-    display: inline;
-    position:absolute;
-    background-color: white;
-    padding: 20px;
-    float: left;
-    top:  300px;
-    left: 25px;
-
-    & > * {
-        padding-top: 30px;
-    }
-
-    .form {
-        padding-top: 30px;
-    }
+export const ContainerPage = styled.div`
+  width: 100%;
 `;
 
+export const Login = styled.div`
+  display: inline;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  float: left;
+  top: 300px;
+  left: 25px;
+
+  & > * {
+    padding-top: 30px;
+  }
+
+  .form {
+    padding-top: 30px;
+  }
+`;
 
 export const ContainerLogo = styled.div`
-    background-image: url(/img/LoginPage-img.png);
-    background-size: cover;
-    float: right;
-    width: 705px;
-    height: 918px; 
-    padding: 10px;
-    align-items: center;
+  background-image: url(/img/LoginPage-img.png);
+  background-size: cover;
+  float: right;
+  width: 705px;
+  height: 918px;
+  padding: 10px;
+  align-items: center;
 
-
-.titulo{
-    position:relative;
+  .titulo {
+    position: relative;
     top: 100px;
     font-family: 'Belleza';
     font-style: normal;
@@ -44,9 +42,8 @@ export const ContainerLogo = styled.div`
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
-}
+  }
 `;
-
 
 export const Link = styled.a`
     position: relative;
@@ -64,8 +61,7 @@ p {
     font-weight: bold;
     text-decoration: underline;
 }
-`
-export const Image = styled.img`
-    padding-top: 50px;
 `;
-
+export const Image = styled.img`
+  padding-top: 50px;
+`;

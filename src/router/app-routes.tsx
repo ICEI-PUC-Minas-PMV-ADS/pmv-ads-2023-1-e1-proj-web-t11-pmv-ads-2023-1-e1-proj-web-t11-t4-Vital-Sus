@@ -11,7 +11,7 @@ function AppRoutes() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/cadastro' element={<CadastroV2 />} />
-        <Route path='/Login' element={<LoginPage />} />
+        <Route path='/login' element={<LoginPage />} />
         <Route path='/triagem' element={<TriagemPage />} />
       </Routes>
     </BrowserRouter>
