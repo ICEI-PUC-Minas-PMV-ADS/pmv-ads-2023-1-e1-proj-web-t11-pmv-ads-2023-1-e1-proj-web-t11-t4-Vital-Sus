@@ -5,7 +5,7 @@ import { ContainerPage, Login, ContainerLogo, Link, Image } from './Style';
 import { aprovarLogin } from '../../utils/validacaoLogin';
 import ButtonVT from '../../components/button/button';
 import TextFieldVT from '../../components/textField/textField';
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
   const [form, setForm] = useState<FormData>({
@@ -18,13 +18,12 @@ const LoginPage = () => {
     senha: string;
   }
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const handleSubmit = async (
-  ) => {
+  const handleSubmit = async () => {
     const userAutenticado = await aprovarLogin(form.email, form.senha);
-    if (userAutenticado){
-      navigate('/')
+    if (userAutenticado) {
+      navigate('/');
     }
   };
 
@@ -36,8 +35,6 @@ const LoginPage = () => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [event.target.name]: event.target.value });
   };
-
-  
 
   return (
     <TemplatePage showButton={false} labelButton={''}>

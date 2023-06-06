@@ -20,25 +20,8 @@ Os testes de software realizados utilizaram o modelo "caixa preta". O modelo "ca
 |                       | 4. Confirmar clicando no botão Entrar                                                              |
 | Critério de êxito     | - O usuário deve ser redirecionado a página "homePage" da aplicação                                |
 
-| **Caso de teste 2**   | **RF-001 Verificar validação dos campos email e senha**                                            |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| Requisitos associados | RF-O01 Site deve apresentar uma página onde o usuário faça o login com as credenciais cadastradas. |
-| Objetivo do teste     | Verificar se os campos "Email" e "senha" foram preenchidos com valores válidos                     |
-| Passos                | 1. Acessar a pagina de Login                                                                       |
-|                       | 2. Informar um Email Inválido sem os caracteres "@" "."                                            |
-|                       | 3. Informar uma senha inválida, com comprimento inferior a 8 dígitos                               |
-|                       | 4. Confirmar clicando no botão "Entrar"                                                            |
-| Critério de êxito     | - O usuário deve ser informado de que os campos não são válidos.                                   |
-
-| **Caso de teste 3**   | **RF-001 Verificar autenticação do usuário através dos campos "Email" e "senha"**                   |
-| --------------------- | --------------------------------------------------------------------------------------------------- |
-| Requisitos associados | RF-O01 Site deve apresentar uma página onde o usuário faça o login com as credenciais cadastradas.  |
-| Objetivo do teste     | Verificar os campos "Email" e "Senha" digitados são cadastrados na aplicação                        |
-| Passos                | 1. Acessar a pagina de Login                                                                        |
-|                       | 2. Informar um Email Inválido não cadastrado no registro de usuários "./public/dados.json"          |
-|                       | 3. Informar uma senha inválida, não cadastrada no registro de usuários "./public/dados.json"        |
-|                       | 4. Confirmar clicando no botão "Entrar"                                                             |
-| Critério de êxito     | - O usuário deve ser informado de que os campos "Email" e "senha" não foram digitados corretamente" |
+Figura 1 - êxito funcionalidade
+![Test-tela login](img/Tela_login_test-1.png)
 
 ## Ferramentas de Testes (Opcional)
 
