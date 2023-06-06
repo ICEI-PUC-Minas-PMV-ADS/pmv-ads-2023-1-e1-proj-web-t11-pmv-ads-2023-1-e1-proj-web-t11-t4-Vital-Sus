@@ -73,7 +73,6 @@ const LoginPage = () => {
             ></ButtonVT>
           </form>
         </Login>
-
         <ContainerLogo>
           <p className='titulo'>
             {' '}
