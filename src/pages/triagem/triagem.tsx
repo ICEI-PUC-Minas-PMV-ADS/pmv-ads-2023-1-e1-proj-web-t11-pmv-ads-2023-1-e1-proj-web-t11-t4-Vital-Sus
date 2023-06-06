@@ -1,13 +1,10 @@
-import { Stack, Tab, Tabs, Typography } from '@mui/material';
+import { Alert, Snackbar, Stack, Tab } from '@mui/material';
 import React, { useState } from 'react';
-import TemplatePage from '../../template/template-page/templatePage';
 import { ContainerTabs, TabsTriagem } from './styles';
 import ButtonVT from '../../components/button/button';
-import TextFieldVT from '../../components/textField/textField';
-import CheckboxVT from '../../components/checkbox/checkbox';
-import RadioButtonVT from '../../components/radioButton/radioButton';
 import TriagemInfo from './pagesTriagem/triagemInfo';
 import TriagemSintomas from './pagesTriagem/triagemSintomas';
+import TriagemHistory from './pagesTriagem/triagemHistory';
 
 const Triagem = () => {
   const [activeTab, setActiveTab] = useState(0); // Estado para controlar a tab ativa
@@ -23,6 +20,23 @@ const Triagem = () => {
 
   const handlePreviousTab = () => {
     setActiveTab(activeTab - 1);
+  };
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (
+    event?: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
   };
 
   return (
@@ -62,7 +76,7 @@ const Triagem = () => {
 
         {activeTab === 2 && (
           <div>
-            <p>Histórico</p>
+            <TriagemHistory />
           </div>
         )}
         <Stack
@@ -81,12 +95,22 @@ const Triagem = () => {
             onClick={handlePreviousTab}
           />
           {activeTab === 2 ? (
-            <ButtonVT model='primary' label='Enviar' onClick={() => {}} />
+            <ButtonVT model='primary' label='Enviar' onClick={handleClick} />
           ) : (
             <ButtonVT model='primary' label='Próximo' onClick={handleNextTab} />
           )}
         </Stack>
       </Stack>
+      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+        <Alert
+          onClose={handleClose}
+          severity='success'
+          variant='filled'
+          sx={{ width: '100%' }}
+        >
+          Triagem realizada com sucesso!
+        </Alert>
+      </Snackbar>
     </ContainerTabs>
   );
 };

@@ -1,4 +1,4 @@
-import { Tabs, Typography } from '@mui/material';
+import { Snackbar, Tabs, Typography } from '@mui/material';
 import styled from 'styled-components';
 import { Item } from '../homePage/styles';
 
@@ -24,10 +24,5 @@ export const StyleItem = styled(Item)`
 `;
 
 export const StyleTypography = styled(Typography)`
-  font-family: 'Lexend';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 16px;
   color: #005f89;
 `;

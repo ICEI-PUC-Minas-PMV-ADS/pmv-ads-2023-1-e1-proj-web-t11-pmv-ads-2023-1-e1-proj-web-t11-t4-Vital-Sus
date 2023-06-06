@@ -1,23 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Radio, FormControlLabel } from '@mui/material';
 
 interface RadioButtonProps {
   label: string;
   value: string;
+  checked?: boolean;
+  onChange?: (value: string) => void;
 }
 
-const RadioButtonVT: React.FC<RadioButtonProps> = ({ label, value }) => {
-  const [selectedValue, setSelectedValue] = useState('');
-
-  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedValue(event.target.value);
+const RadioButtonVT: React.FC<RadioButtonProps> = ({
+  label,
+  value,
+  checked,
+  onChange = () => {},
+}) => {
+  const handleRadioChange = () => {
+    onChange(value);
   };
 
   return (
     <FormControlLabel
       control={
         <Radio
-          checked={selectedValue === value}
+          checked={checked}
           onChange={handleRadioChange}
           value={value}
           style={{ color: '#005F89' }}
