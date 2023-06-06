@@ -1,6 +1,6 @@
 import { validarEmail,validarSenha } from "./validadorInput";
 
-export async function aprovarLogin(email: string, senha: string) {
+export async function aprovarLogin(email: string, senha: string): Promise<boolean> {
 
   const dados = '/dados.json';
 
@@ -20,17 +20,18 @@ export async function aprovarLogin(email: string, senha: string) {
           localStorage.setItem('nomeUsario', dadosJSON[i].nome);
           localStorage.setItem('dataNascimento', dadosJSON[i].dataNascimento);
           localStorage.setItem('emailUsuario', dadosJSON[i].email);
-          alert('Login aprovado');
-          break;
-        } else if (i === dadosJSON.length - 1) {
-          alert('Email ou senha inválidos');
+          return true
         }
       }
+          alert('Email ou senha inválidos');
+          return false
+        
     }else{
       alert("Campos email ou senha inválidos")
+      return false;
     }
   } catch (error) {
     console.error('Erro na requisição: ', error);
-    return null;
+    throw error;
   }
 }

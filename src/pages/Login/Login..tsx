@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import TemplatePage from '../../template/template-page/templatePage';
 import { validarEmail, validarSenha } from '../../utils/validadorInput';
 import { ContainerPage, Login, ContainerLogo, Link, Image } from './Style';
-import { Container } from '@mui/material';
 import { aprovarLogin } from '../../utils/validacaoLogin';
 import ButtonVT from '../../components/button/button';
 import TextFieldVT from '../../components/textField/textField';
+import {useNavigate} from 'react-router-dom'
 
 const LoginPage = () => {
   const [form, setForm] = useState<FormData>({
@@ -18,9 +18,14 @@ const LoginPage = () => {
     senha: string;
   }
 
+  const navigate = useNavigate()
+
   const handleSubmit = async (
   ) => {
-    aprovarLogin(form.email, form.senha);
+    const userAutenticado = await aprovarLogin(form.email, form.senha);
+    if (userAutenticado){
+      navigate('/')
+    }
   };
 
   const validadorImput = (): boolean => {
@@ -31,6 +36,8 @@ const LoginPage = () => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [event.target.name]: event.target.value });
   };
+
+  
 
   return (
     <TemplatePage showButton={false} labelButton={''}>
