@@ -23,6 +23,20 @@ Os testes de software realizados utilizaram o modelo "caixa preta". O modelo "ca
 Figura 1 - êxito funcionalidade
 ![Test-tela login](img/Tela_login_test-1.png)
 
+## Funcionalidade Tela Login
+
+| **Caso de teste 1**   | **RF-001 Redirecionar usuário não cadastrado para tela de cadastro**                                |
+| --------------------- | --------------------------------------------------------------------------------------------------- |
+| Requisitos associados | RF-O01 A página Login deve apresentar um "link" para redirecionar o usuário para página de cadastro |
+| Passos                | 1. Acessar a pagina de Login                                                                        |
+|                       | 2. Clicar no Link "Clique aqui"                                                                     |
+|                       |                                                                                                     |
+|                       |                                                                                                     |
+| Critério de êxito     | - O usuário deve ser redirecionado a página "cadastro" da aplicação                                 |
+
+Figura 2 - êxito funcionalidade
+![Test-tela login](img/Tela_login_test-2.png)
+
 ## Ferramentas de Testes (Opcional)
 
 Comente sobre as ferramentas de testes utilizadas.
