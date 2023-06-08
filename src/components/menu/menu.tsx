@@ -51,7 +51,7 @@ const Menu = ({
                 <ButtonVT
                   label={labelButton}
                   model='primary'
-                  onClick={() => navigate('/cadastro')}
+                  onClick={() => navigate('/login')}
                   fullWidth
                 />
               </ListItem>

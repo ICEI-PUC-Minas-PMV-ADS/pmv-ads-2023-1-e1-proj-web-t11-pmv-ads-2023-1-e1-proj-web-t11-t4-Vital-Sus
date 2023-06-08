@@ -1,6 +1,6 @@
 import ButtonVT from '../../components/button/button';
 import React, { useState, ChangeEvent } from 'react';
-import { Typography, Grid, Alert, Stack, MenuItem } from '@mui/material';
+import { Typography, Grid, Alert, Stack, MenuItem, Link } from '@mui/material';
 import TemplatePage from '../../template/template-page/templatePage';
 import { validarFormulario } from '../../utils/validacao-cadastro';
 import {
@@ -11,6 +11,7 @@ import {
   TypographTitle,
 } from './styles';
 import TextFieldVT from '../../components/textField/textField';
+import { TypographyLink } from '../login/styles';
 
 const Cadastro = () => {
   const [selectedOption, setSelectedOption] = useState('');
@@ -27,6 +28,12 @@ const Cadastro = () => {
     <TemplatePage labelButton=''>
       <Container>
         <TypographCad>Cadastrar</TypographCad>
+        <TypographyLink>
+          {'Já possui cadastro? '}
+          <Link underline='hover' color='inherit' href='./login'>
+            Clique aqui
+          </Link>
+        </TypographyLink>
         <StyledBox>
           <TypographTitle>Dados Pessoais</TypographTitle>
           <StyledGrid container spacing={2}>
@@ -185,6 +192,7 @@ const Cadastro = () => {
               />
             </Grid>
           </StyledGrid>
+
           <Stack
             direction={'row'}
             spacing={5}
