@@ -55,6 +55,7 @@ export const StyleButton = styled(Button)<StyleButtonProps>`
     text-transform: none;
     size: auto;
     white-space: nowrap;
+    min-width: 7rem;
 
     ${({ model }) => (model === 'primary' ? primary : {})}
     ${({ model }) => (model === 'secundary' ? secundary : {})}

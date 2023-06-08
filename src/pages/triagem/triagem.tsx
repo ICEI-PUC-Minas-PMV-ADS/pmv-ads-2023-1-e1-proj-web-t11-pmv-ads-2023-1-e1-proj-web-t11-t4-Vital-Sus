@@ -5,6 +5,7 @@ import ButtonVT from '../../components/button/button';
 import TriagemInfo from './pagesTriagem/triagemInfo';
 import TriagemSintomas from './pagesTriagem/triagemSintomas';
 import TriagemHistory from './pagesTriagem/triagemHistory';
+import { SnackbarOrigin } from '@mui/material/Snackbar';
 
 const Triagem = () => {
   const [activeTab, setActiveTab] = useState(0); // Estado para controlar a tab ativa
@@ -23,9 +24,16 @@ const Triagem = () => {
   };
 
   const [open, setOpen] = React.useState(false);
+  const [snackbarPosition, setSnackbarPosition] = useState<SnackbarOrigin>({
+    vertical: 'top',
+    horizontal: 'center',
+  });
 
   const handleClick = () => {
     setOpen(true);
+    setTimeout(function () {
+      window.location.href = '/';
+    }, 2000);
   };
 
   const handleClose = (
@@ -37,6 +45,13 @@ const Triagem = () => {
     }
 
     setOpen(false);
+  };
+
+  const handleSnackbarPositionChange = () => {
+    setSnackbarPosition({
+      vertical: 'top',
+      horizontal: 'right',
+    });
   };
 
   return (
@@ -95,13 +110,24 @@ const Triagem = () => {
             onClick={handlePreviousTab}
           />
           {activeTab === 2 ? (
-            <ButtonVT model='primary' label='Enviar' onClick={handleClick} />
+            <ButtonVT
+              model='primary'
+              label='Enviar'
+              onClick={() => {
+                handleClick();
+              }}
+            />
           ) : (
             <ButtonVT model='primary' label='Próximo' onClick={handleNextTab} />
           )}
         </Stack>
       </Stack>
-      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+      <Snackbar
+        anchorOrigin={snackbarPosition}
+        open={open}
+        autoHideDuration={2000}
+        onClose={handleClose}
+      >
         <Alert
           onClose={handleClose}
           severity='success'

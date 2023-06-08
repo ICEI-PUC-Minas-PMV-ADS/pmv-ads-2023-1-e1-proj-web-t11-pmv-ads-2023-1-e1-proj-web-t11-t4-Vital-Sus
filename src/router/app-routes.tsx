@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import HomePage from '../pages/homePage/homePage';
 import CadastroV2 from '../pages/cadastro/cadastro';
 import TriagemPage from '../pages/triagem/triagemPage';
+import LoginPage from '../pages/login/login';
 
 function AppRoutes() {
   return (
@@ -11,6 +12,7 @@ function AppRoutes() {
         <Route path='/' element={<HomePage />} />
         <Route path='/cadastro' element={<CadastroV2 />} />
         <Route path='/triagem' element={<TriagemPage />} />
+        <Route path='/login' element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
