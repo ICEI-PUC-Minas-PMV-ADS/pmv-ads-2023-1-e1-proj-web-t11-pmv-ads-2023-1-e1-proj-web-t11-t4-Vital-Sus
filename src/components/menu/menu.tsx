@@ -34,10 +34,17 @@ const Menu = ({
       <Drawer anchor='right' open={open} onClose={handleClick}>
         <List>
           <ListItem>
-            <ListItemText primary='Página Inicial' />
+            <a href='/' style={{ color: '#000000', textDecoration: 'none' }}>
+              Página Inicial
+            </a>
           </ListItem>
           <ListItem>
-            <ListItemText primary='Triagem' />
+            <a
+              href='/triagem'
+              style={{ color: '#000000', textDecoration: 'none' }}
+            >
+              Triagem
+            </a>
           </ListItem>
           {showMyAccount && (
             <ListItem>
