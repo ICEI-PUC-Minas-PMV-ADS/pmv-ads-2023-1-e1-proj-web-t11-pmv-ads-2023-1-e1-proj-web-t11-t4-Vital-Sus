@@ -56,12 +56,13 @@ as funções e tarefas específicas que o software deve executar para atender à
 
 Os requisitos funcionais desse projeto se apresentam na tabela abaixo:
 
-| ID     | Descrição do Requisito                                                                | Prioridade |
-| ------ | ------------------------------------------------------------------------------------- | ---------- |
-| RF-001 | O site deve apresentar uma página inicial onde o usuário faça o login.                | ALTA       |
-| RF-003 | O site deve possuir funcionalidade de cadastro de novo usuários.                      | ALTA       |
-| RF-004 | O site deve permitir ao usuário que ele responda um questionário de triagem.          | ALTA       |
-| RF-007 | O site deve permitir o usuário visualizar as informações de sua marcação da consulta. | MÉDIA      |
+| ID     | Descrição do Requisito                                                                       | Prioridade |
+| ------ | -------------------------------------------------------------------------------------------- | ---------- |
+| RF-001 | O site deve apresentar uma página inicial visualize informaçoes sobre a triagem.             | ALTA       |
+| RF-002 | O site deve apresentar uma página onde o usuário faça o login.                               | ALTA       |
+| RF-003 | A página login deve apresentar um "link" para redirecionar o usuário para página de cadastro | ALTA       |
+| RF-004 | O site deve possuir funcionalidade de cadastro de novo usuários.                             | ALTA       |
+| RF-005 | O site deve permitir ao usuário que ele responda um questionário de triagem.                 | ALTA       |
 
 ### Requisitos não Funcionais
 
