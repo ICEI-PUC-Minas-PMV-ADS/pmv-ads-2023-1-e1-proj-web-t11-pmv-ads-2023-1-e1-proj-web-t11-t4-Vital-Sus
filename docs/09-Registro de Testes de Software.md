@@ -8,10 +8,10 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 ## Evidência: CT-01
 
-## **CT-01 Vizuaizar página inicial**
+### CT-01 Vizualizar página inicial
 
-    - Deve ser exibido a página inicial com duas sessões: "Se sentindo mal?" e "Benefícios de uma triagem online"
-     -Deve estar responsivo para desktop, tablet e mobile a página o header e o footer.
+- Deve ser exibido a página inicial com duas sessões: "Se sentindo mal?" e "Benefícios de uma triagem online"
+- Deve estar responsivo para desktop, tablet e mobile a página o header e o footer.
 
 Figura 1 - Visualização da tela inicial
 ![CT-01](img/TelaHome_teste.png)
