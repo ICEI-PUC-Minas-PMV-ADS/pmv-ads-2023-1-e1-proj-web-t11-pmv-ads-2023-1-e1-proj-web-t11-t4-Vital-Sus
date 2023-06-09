@@ -4,23 +4,17 @@
 
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 
-## Registro de testes de software
+# Registro de testes de software
 
-#### Evidência: CT-01
+## Evidência: CT-01
 
-<table>
-    <tr>
-        <td><b>Caso de teste</b></td>
-        <td> <b>CT-01</b> Vizuaizar página inicial</td>
-    </tr>
-     <td>
-        <li>Deve ser exibido a página inicial com duas sessões: "Se sentindo mal?" e "Benefícios de uma triagem online"</li>
-        <li>Deve estar responsivo para desktop, tablet e mobile a página o header e o footer.</li>
-    </td>
-</table>
+## **CT-01 Vizuaizar página inicial**
+
+    - Deve ser exibido a página inicial com duas sessões: "Se sentindo mal?" e "Benefícios de uma triagem online"
+     -Deve estar responsivo para desktop, tablet e mobile a página o header e o footer.
 
 Figura 1 - Visualização da tela inicial
-![CT-01](img/TelaHome_teste)
+![CT-01](img/TelaHome_teste.png)
 
 Figura 2 - Responsividade da tela inicial
 ![CT-01](img/TelaHome_SmartPhone.png)
