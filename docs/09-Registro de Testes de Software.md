@@ -29,7 +29,7 @@ Figura 2 - Responsividade da tela inicial
 - Ao clicar em "Entrar", deverá exibir um alert com login de sucesso e redirecionar para a página inicial
 
 Figura 3 - Função, desabilitar botão "Entrar"
-![CT-02](img/Login-Botao.png)
+![CT-02](img/Login-Botao.PNG)
 
 Figura 4 - Alerta de login realizado com sucesso
 ![CT-02](img/Login-Teste_2_1.png)
@@ -43,7 +43,7 @@ Figura 4 - Alerta de login realizado com sucesso
 - O usuário deve ser redirecionado a página cadastro da aplicação
 
 Figura 5 - Redirecionamento página de cadastro
-![CT-03](img/Login-teste-3.png)
+![CT-03](img/Login-teste_3.png)
 
 ---
 
