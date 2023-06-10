@@ -47,7 +47,6 @@ Figura 4 - Alerta de login realizado com sucesso
 - O usuário deve ser redirecionado a página cadastro da aplicação
 
 Figura 5 - Redirecionamento página de cadastro
-
 ![CT-03](img/Login-teste-3.png)
 
 ---
