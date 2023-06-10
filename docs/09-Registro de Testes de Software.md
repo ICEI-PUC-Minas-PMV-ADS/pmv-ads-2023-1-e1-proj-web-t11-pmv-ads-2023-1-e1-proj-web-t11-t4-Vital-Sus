@@ -14,9 +14,11 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 - Deve estar responsivo para desktop, tablet e mobile a página o header e o footer.
 
 Figura 1 - Visualização da tela inicial
+
 ![CT-01](img/TelaHome_teste.png)
 
 Figura 2 - Responsividade da tela inicial
+
 ![CT-01](img/TelaHome_SmartPhone.png)
 
 ---
@@ -29,9 +31,11 @@ Figura 2 - Responsividade da tela inicial
 - Ao clicar em "Entrar", deverá exibir um alert com login de sucesso e redirecionar para a página inicial
 
 Figura 3 - Função, desabilitar botão "Entrar"
+
 ![CT-02](img/Login-Botao.png)
 
 Figura 4 - Alerta de login realizado com sucesso
+
 ![CT-02](img/Login-Teste_2_1.png)
 
 ---
@@ -43,6 +47,7 @@ Figura 4 - Alerta de login realizado com sucesso
 - O usuário deve ser redirecionado a página cadastro da aplicação
 
 Figura 5 - Redirecionamento página de cadastro
+
 ![CT-03](img/Login-teste-3.png)
 
 ---
@@ -55,9 +60,11 @@ Figura 5 - Redirecionamento página de cadastro
 - Fazer download de um arquivo json com todas as informações de cadastro.
 
 Figura 6 - Alerta "usuário cadastrado com sucesso"
+
 ![CT-04](img/xx.png)
 
 Figura 7 - Download arquivo JSON
+
 ![CT-04](img/xx.png)
 
 ---
@@ -70,6 +77,7 @@ Figura 7 - Download arquivo JSON
 - O usuário deve ser redirecionado para a página inicial
 
 Figura 8 - Alerta "Triagem realizada com sucesso!"
+
 ![CT-05](img/xx.png)
 
 ---

@@ -4,22 +4,7 @@ Os planos de testes com casos de teste são documentos cruciais para garantir a 
 
 Esses planos também são responsáveis por orientar a equipe de teste e fornecer uma estrutura para relatar e acompanhar os resultados dos testes. Eles abrangem diferentes tipos de testes, como testes de unidade, integração, sistema, desempenho e segurança. Ao seguir esses planos, é possível garantir uma abordagem estruturada e eficiente para o teste de software, assegurando a robustez do sistema e sua conformidade com os requisitos funcionais e não funcionais.
 
-Os critérios para testes de software na apliação foram:
-
-- Testes de navegabilidade
-- Testes de responsividade
-- Testes de validação dos campos
-- Testes de ponta a ponta
-
-Tabela de lista de testes indentificados:
-| **ID** | **Descrição do teste** | **Critério avaliado** | **Aplicado a tela** |
-| ------ | -----------------------|---------------------- | ------------------- |
-| CT-01 | Vizuaizar página inicial | Navegabilidade |
-| CT-02 | Redirecionar Usuário para tela de acesso (Login)| Navegabilidade |
-| CT-03 | Realizar acesso ao sistema através da tela login | Validação dos campos |
-| CT-04 | Redirecionar usuário não cadastrado para tela de cadastro | Navegabilidade |
-| CT-05 | Cadastrar novos usuários | Validação dos campos |
-| CT-06 | Preencher formulário de triagem | Validação dos campos |
+### Testes tela inicial
 
 <table>
   <tr>
@@ -54,6 +39,8 @@ Tabela de lista de testes indentificados:
 </table>
 
 ---
+
+### Testes tela de Login
 
 <table>
   <tr>
@@ -123,6 +110,8 @@ Tabela de lista de testes indentificados:
 
 ---
 
+## Testes tela de cadastro
+
 <table>
   <tr>
     <td><b>Caso de teste</b></td>
@@ -156,6 +145,8 @@ Tabela de lista de testes indentificados:
 </table>
 
 ---
+
+### Testes tela de triagem
 
 <table>
   <tr>
