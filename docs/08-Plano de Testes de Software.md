@@ -145,7 +145,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
     <td><b>Critérios de êxito</b></td>
     <td>
         <li>Ao clicar em "Cadastrar", deverá exibir um alerta com cadastro de sucesso e redirecionar para a página inicial.</li>
-        <li>Fazer download de um arquivo json com todas as informações de cadastro.</li>
+        <li>Fazer download de um arquivo json com todas as informações de cadastros.</li>
     </td>
   </tr>
 </table>
@@ -153,6 +153,8 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
 #### Evidência:
 
 ![CT-04](img/Cadastro.png)
+![CT-04](img/CadastroSucesso.jpeg)
+![CT-04](img/cadastroSalvo.png)
 
 ---
 
@@ -228,7 +230,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   <tr>
     <td><b>Critérios de êxito</b></td>
     <td>
-        <li>Ao clicar em "próximo", não deverá exibir um alerta se os campos obrigatórios forem preenchidos corretamente.</li>
+        <li>Ao clicar em "próximo", irá para aba seguinte.</li>
         <li> Ao clicar em "anterior" retornará aba de "informações do paciente" e se perderá as informações preenchidas mas que não foram salvas.</li> 
         <li>Fazer download de um arquivo json com todas as informações da aba "sintomas".</li>
     </td>
