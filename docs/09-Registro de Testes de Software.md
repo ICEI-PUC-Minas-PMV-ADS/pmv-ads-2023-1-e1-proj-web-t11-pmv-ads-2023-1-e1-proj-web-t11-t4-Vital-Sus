@@ -60,7 +60,7 @@ Figura 5 - Redirecionamento página de cadastro
 
 Figura 6 - Alerta "usuário cadastrado com sucesso"
 
-![CT-04](img/xx.png)
+![CT-04](cadastro_teste_1.png)
 
 Figura 7 - Download arquivo JSON
 
