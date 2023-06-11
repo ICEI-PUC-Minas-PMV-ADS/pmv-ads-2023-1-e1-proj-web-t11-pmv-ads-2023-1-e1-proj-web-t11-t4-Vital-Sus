@@ -38,7 +38,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
 
 #### Evidência:
 
-![CT-01](img/xx.png)
+![CT-01](img/Nao-Logado.png)
 
 ---
 
@@ -78,7 +78,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
 
 #### Evidência:
 
-![CT-02](img/xx.png)
+![CT-02](img/Login.png)
 
 ---
 
@@ -114,7 +114,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
 
 #### Evidência:
 
-![CT-03](img/xx.png)
+![CT-03](img/Logado.png)
 
 ---
 
@@ -136,7 +136,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   <tr>
     <td><b>Passos</b></td>
     <td>
-        <li> Acessar a pagina de cadastro clicando no link "Clique aqui" na página de cadstro</li>
+        <li> Acessar a pagina de cadastro clicando no link "Clique aqui" na página de cadastro</li>
         <li> Preencher todos os campos obrigatórios</li>
         <li> Confirmar clicando no botão "Cadastrar"</li>
     </td>
@@ -144,7 +144,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   <tr>
     <td><b>Critérios de êxito</b></td>
     <td>
-        <li>Ao clicar em "Cadastrar", deverá exibir um alert com cadastro de sucesso e redirecionar para a página inicial.</li>
+        <li>Ao clicar em "Cadastrar", deverá exibir um alerta com cadastro de sucesso e redirecionar para a página inicial.</li>
         <li>Fazer download de um arquivo json com todas as informações de cadastro.</li>
     </td>
   </tr>
@@ -152,6 +152,134 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
 
 #### Evidência:
 
-![CT-04](img/xx.png)
+![CT-04](img/Cadastro.png)
+
+---
+
+---<table>
+
+  <tr>
+    <td><b>Caso de teste</b></td>
+    <td> <b>CT-05</b> Questionário de triagem</td>
+  </tr>
+  <tr>
+    <td><b>Requisitos associados</b></td>
+    <td>
+        <b>RF-005</b> O site deve possuir a funcionalidade de cadastro dos sintomas dos usuários.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Objetivo do teste</b></td>
+    <td> Verificar o cadastro dos sintomas dos usuários</td>
+  </tr>
+  <tr>
+    <td><b>Passos</b></td>
+    <td>
+        <li> Com o usuário logado</li>
+        <li> Acessar a página do questionário de triagem clicando no botão "iniciar triagem" na página inicial</li>
+        <li> Acessar a aba "informações do paciente" na página de questionário de triagem </li>
+        <li> Preencher todos os campos obrigatórios</li>
+        <li> Confirmar clicando no botão "próximo"</li>
+    </td>
+
+  </tr>
+  <tr>
+    <td><b>Critérios de êxito</b></td>
+    <td>
+        <li>Ao clicar em "próximo", não deverá exibir um alerta se os campos obrigatórios forem preenchidos corretamente</li>
+        <li>Fazer download de um arquivo json com todas as informações da aba "informaçãoes do paciente".</li>
+    </td>
+  </tr>
+</table>
+
+#### Evidência:
+
+![CT-05](img/Triagem-1.png)
+
+---
+
+---<table>
+
+  <tr>
+    <td><b>Caso de teste</b></td>
+    <td> <b>CT-06</b> Questionário de triagem</td>
+  </tr>
+  <tr>
+    <td><b>Requisitos associados</b></td>
+    <td>
+        <b>RF-006</b> O site deve possuir a funcionalidade de cadastro dos sintomas dos usuários.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Objetivo do teste</b></td>
+    <td> Verificar o cadastro dos sintomas dos usuários</td>
+  </tr>
+  <tr>
+    <td><b>Passos</b></td>
+    <td>
+        <li> Com o usuário logado</li>
+        <li> Após ter clicado no botão próximo na aba de "informaçoõs do paciente" </li>
+        <li> Acessar a aba "sintomas" na página de questionário de triagem </li>
+        <li> Preencher todos os campos obrigatórios</li>
+        <li> Confirmar clicando no botão "proximo"</li>
+      </td>
+
+  </tr>
+  <tr>
+    <td><b>Critérios de êxito</b></td>
+    <td>
+        <li>Ao clicar em "próximo", não deverá exibir um alerta se os campos obrigatórios forem preenchidos corretamente.</li>
+        <li> Ao clicar em "anterior" retornará aba de "informações do paciente" e se perderá as informações preenchidas mas que não foram salvas.</li> 
+        <li>Fazer download de um arquivo json com todas as informações da aba "sintomas".</li>
+    </td>
+  </tr>
+</table>
+
+#### Evidência:
+
+![CT-06](img/Triagem-2.png)
+
+---
+
+---<table>
+
+  <tr>
+    <td><b>Caso de teste</b></td>
+    <td> <b>CT-07</b> Questionário de triagem</td>
+  </tr>
+  <tr>
+    <td><b>Requisitos associados</b></td>
+    <td>
+        <b>RF-007</b> O site deve possuir a funcionalidade de cadastro dos sintomas dos usuários.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Objetivo do teste</b></td>
+    <td> Verificar o cadastro dos sintomas dos usuários</td>
+  </tr>
+  <tr>
+    <td><b>Passos</b></td>
+    <td>
+        <li> Com o usuário logado</li>
+        <li> Após ter clicado no botão "próximo" na aba de "sintomas"</li>
+        <li> Acessar a aba "histórico médico" na página de questionário de triagem </li>
+        <li> Preencher todos os campos obrigatórios</li>
+        <li> Confirmar clicando no botão "enviar"</li>
+    </td>
+
+  </tr>
+  <tr>
+    <td><b>Critérios de êxito</b></td>
+    <td>
+        <li> Ao clicar em "enviar", deverá exibir um alerta se os campos obrigatórios forem preenchidos corretamente.</li>
+        <li> Ao clicar em "anterior" retornará para a aba de "sintomas" e se perderá as informações preenchidas mas que não foram salvas. </li> 
+        <li> Fazer download de um arquivo json com todas as informações da aba "histórico médico".</li>
+    </td>
+  </tr>
+</table>
+
+#### Evidência:
+
+![CT-07](img/Triagem-3.png)
 
 ---
