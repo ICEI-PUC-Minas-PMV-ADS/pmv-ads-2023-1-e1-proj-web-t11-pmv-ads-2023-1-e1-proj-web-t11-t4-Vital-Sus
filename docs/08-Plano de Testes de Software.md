@@ -4,6 +4,8 @@ Os planos de testes com casos de teste são documentos cruciais para garantir a 
 
 Esses planos também são responsáveis por orientar a equipe de teste e fornecer uma estrutura para relatar e acompanhar os resultados dos testes. Eles abrangem diferentes tipos de testes, como testes de unidade, integração, sistema, desempenho e segurança. Ao seguir esses planos, é possível garantir uma abordagem estruturada e eficiente para o teste de software, assegurando a robustez do sistema e sua conformidade com os requisitos funcionais e não funcionais.
 
+### Testes tela inicial
+
 <table>
   <tr>
     <td><b>Caso de teste</b></td>
@@ -36,11 +38,9 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   </tr>
 </table>
 
-#### Evidência:
-
-![CT-01](img/Nao-Logado.png)
-
 ---
+
+### Testes tela de Login
 
 <table>
   <tr>
@@ -70,15 +70,11 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   <tr>
     <td><b>Critérios de êxito</b></td>
     <td>
-        <li>O botão só ficará habilitado caso o email e senha esteja cadastrado</li>
+        <li>O botão só ficará habilitado caso o email e senha atenda os critérios dos campos</li>
         <li>Ao clicar em "Entrar", deverá exibir um alert com login de sucesso e redirecionar para a página inicial</li>
     </td>
   </tr>
 </table>
-
-#### Evidência:
-
-![CT-02](img/Login.png)
 
 ---
 
@@ -112,11 +108,9 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   </tr>
 </table>
 
-#### Evidência:
-
-![CT-03](img/Logado.png)
-
 ---
+
+## Testes tela de cadastro
 
 <table>
   <tr>
@@ -150,29 +144,24 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   </tr>
 </table>
 
-#### Evidência:
-
-![CT-04](img/Cadastro.png)
-![CT-04](img/CadastroSucesso.jpeg)
-![CT-04](img/cadastroSalvo.png)
-
 ---
 
----<table>
+### Testes tela de triagem
 
+<table>
   <tr>
     <td><b>Caso de teste</b></td>
-    <td> <b>CT-05</b> Questionário de triagem</td>
+    <td> <b>CT-05</b> Preencher formulário de triagem com sintomas do paciente</td>
   </tr>
   <tr>
     <td><b>Requisitos associados</b></td>
     <td>
-        <b>RF-005</b> O site deve possuir a funcionalidade de cadastro dos sintomas dos usuários.
+        <b>RF-005</b> O site deve permitir ao usuário que ele responda um questionário de triagem.<br />
     </td>
   </tr>
   <tr>
     <td><b>Objetivo do teste</b></td>
-    <td> Verificar o cadastro dos sintomas dos usuários</td>
+    <td> Mostrar ao usuário um formulário que possa ser preenchido com sintomas e histórico de saúde do usuário</td>
   </tr>
   <tr>
     <td><b>Passos</b></td>
@@ -194,13 +183,9 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   </tr>
 </table>
 
-#### Evidência:
-
-![CT-05](img/Triagem-1.png)
-
 ---
 
----<table>
+<table>
 
   <tr>
     <td><b>Caso de teste</b></td>
@@ -237,13 +222,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
   </tr>
 </table>
 
-#### Evidência:
-
-![CT-06](img/Triagem-2.png)
-
----
-
----<table>
+<table>
 
   <tr>
     <td><b>Caso de teste</b></td>
@@ -279,9 +258,5 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
     </td>
   </tr>
 </table>
-
-#### Evidência:
-
-![CT-07](img/Triagem-3.png)
 
 ---
