@@ -110,7 +110,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
 
 ---
 
-## Testes tela de cadastro
+### Testes tela de cadastro
 
 <table>
   <tr>
@@ -217,7 +217,6 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
     <td>
         <li>Ao clicar em "próximo", irá para aba seguinte.</li>
         <li> Ao clicar em "anterior" retornará aba de "informações do paciente" e se perderá as informações preenchidas mas que não foram salvas.</li> 
-        <li>Fazer download de um arquivo json com todas as informações da aba "sintomas".</li>
     </td>
   </tr>
 </table>
@@ -253,8 +252,7 @@ Esses planos também são responsáveis por orientar a equipe de teste e fornece
     <td><b>Critérios de êxito</b></td>
     <td>
         <li> Ao clicar em "enviar", deverá exibir um alerta se os campos obrigatórios forem preenchidos corretamente.</li>
-        <li> Ao clicar em "anterior" retornará para a aba de "sintomas" e se perderá as informações preenchidas mas que não foram salvas. </li> 
-        <li> Fazer download de um arquivo json com todas as informações da aba "histórico médico".</li>
+        <li> Ao clicar em "anterior" retornará para a aba de "sintomas" e se perderá as informações preenchidas mas que não foram salvas. </li>
     </td>
   </tr>
 </table>

@@ -1,11 +1,5 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
-
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
-
-# Registro de testes de software
-
 ### Evidência: CT-01 - Vizualizar página inicial
 
 ** Critérios de êxito **
@@ -30,10 +24,6 @@ Figura 2 - Responsividade da tela inicial
 - O botão só ficará habilitado caso o email e senha atenda os critérios dos campos
 - Ao clicar em "Entrar", deverá exibir um alert com login de sucesso e redirecionar para a página inicial
 
-Figura 3 - Função, desabilitar botão "Entrar"
-
-![CT-02](img/Login-Botao.png)
-
 Figura 4 - Alerta de login realizado com sucesso
 
 ![CT-02](img/Login-Teste_2_1.png)
@@ -47,7 +37,7 @@ Figura 4 - Alerta de login realizado com sucesso
 - O usuário deve ser redirecionado a página cadastro da aplicação
 
 Figura 5 - Redirecionamento página de cadastro
-![CT-03](img/Login-teste-3.png)
+![CT-03](img/Login_Link.jpeg)
 
 ---
 
@@ -60,11 +50,15 @@ Figura 5 - Redirecionamento página de cadastro
 
 Figura 6 - Alerta "usuário cadastrado com sucesso"
 
-![CT-04](cadastro_teste_1.png)
+![CT-04](img/CadastroSucesso.jpeg)
 
 Figura 7 - Download arquivo JSON
 
-![CT-04](img/xx.png)
+![CT-04](img/cadastroSalvo.png)
+
+Figura 8 - Validação dos campos da tela cadastro
+
+![CT-04](img/CadastroCampos.jpeg)
 
 ---
 
@@ -72,19 +66,22 @@ Figura 7 - Download arquivo JSON
 
 ** Critérios de êxito **
 
-- Ao final do último passo deve ser apresentando uma mensagem "Triagem realizada com sucesso!"
-- O usuário deve ser redirecionado para a página inicial
+- Ao clicar em "próximo", irá para aba seguinte.
+- Ao clicar em "anterior" retornará aba de "informações do paciente" e se perderá as informações preenchidas mas que não foram salvas.
+- Ao clicar em "anterior" retornará para a aba de "sintomas" e se perderá as informações preenchidas mas que não foram salvas.
 
-Figura 8 - Alerta "Triagem realizada com sucesso!"
+![CT-05](img/triagem_1.png)
 
-![CT-05](img/xx.png)
+![CT-05](img/triagemPaciente1.1.png)
+
+![CT-05](img/triagemPaciente1.2.png)
+
+![CT-05](img/triagemPaciente1.3.png)
+
+![CT-05](img/triagemPaciente2.png)
+
+![CT-05](img/triagemPaciente3.png)
+
+![CT-05](img/triagemPaciente4.png)
 
 ---
-
-## Avaliação
-
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-> **Links Úteis**:
->
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
