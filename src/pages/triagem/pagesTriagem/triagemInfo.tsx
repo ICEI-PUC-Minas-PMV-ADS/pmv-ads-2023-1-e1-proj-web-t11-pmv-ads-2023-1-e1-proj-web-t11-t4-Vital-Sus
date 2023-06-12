@@ -36,7 +36,11 @@ const TriagemInfo = () => {
       {selectedValue === 'Não' && (
         <Stack direction={'column'}>
           <StyleItem>
-            <TextFieldVT model='tertiary' label='Nome completo do paciente' />
+            <TextFieldVT
+              model='tertiary'
+              type='string'
+              label='Nome completo do paciente'
+            />
           </StyleItem>
           <StyleItem>
             <TextFieldVT
