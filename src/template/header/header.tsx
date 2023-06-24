@@ -25,15 +25,19 @@ const Header = ({
   const renderDesktopHeader = (props: HeaderProps) => (
     <>
       <nav className='nav'>
-        <a href='/'>Página Inicial</a>
-        <a href='/triagem'>Triagem</a>
+        <a href={labelButton === 'Sair' ? '/on' : '/'}>Página Inicial</a>
+        <a href={labelButton === 'Sair' ? '/triagem' : '/login'}>Triagem</a>
         {showMyAccount && <a href='/perfil'>Meu Perfil</a>}
       </nav>
       {showButton && (
         <ButtonVT
           model={'primary'}
           label={labelButton}
-          onClick={() => navigate('/login')}
+          onClick={
+            labelButton === 'Sair'
+              ? () => navigate('/')
+              : () => navigate('/login')
+          }
         />
       )}
     </>

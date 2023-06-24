@@ -116,5 +116,5 @@ export function validarFormulario(generoSelecionado: string) {
   element.click();
   document.body.removeChild(element);
 
-  window.location.href = '/';
+  window.location.href = '/on';
 }

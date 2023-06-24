@@ -32,7 +32,7 @@ const Triagem = () => {
   const handleClick = () => {
     setOpen(true);
     setTimeout(function () {
-      window.location.href = '/';
+      window.location.href = '/on';
     }, 2000);
   };
 
@@ -45,13 +45,6 @@ const Triagem = () => {
     }
 
     setOpen(false);
-  };
-
-  const handleSnackbarPositionChange = () => {
-    setSnackbarPosition({
-      vertical: 'top',
-      horizontal: 'right',
-    });
   };
 
   return (
