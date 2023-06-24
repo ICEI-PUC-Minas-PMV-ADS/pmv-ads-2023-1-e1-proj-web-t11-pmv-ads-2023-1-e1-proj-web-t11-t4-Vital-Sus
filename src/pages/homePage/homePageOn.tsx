@@ -17,7 +17,7 @@ import {
 } from './styles';
 import { useNavigate } from 'react-router-dom';
 
-const HomePage = () => {
+const HomePageOn = () => {
   const displayDesktop = useMediaQuery(retrieveDisplayTablet());
 
   const navigate = useNavigate();
@@ -66,7 +66,7 @@ const HomePage = () => {
               <ButtonVT
                 label={textsHome.sectionTriagem.labelButton}
                 model='primary'
-                onClick={() => navigate('/login')}
+                onClick={() => navigate('/triagem')}
               ></ButtonVT>
             </Item>
             <Item>
@@ -184,7 +184,7 @@ const HomePage = () => {
   };
 
   return (
-    <TemplatePage showButton={true} labelButton={'Entrar/Criar conta'}>
+    <TemplatePage showButton={true} labelButton={'Sair'}>
       <Container>
         {displayDesktop ? desktopHomePage() : mobileHomePage()}
       </Container>
@@ -192,4 +192,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePageOn;

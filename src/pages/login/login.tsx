@@ -36,7 +36,7 @@ const LoginPage = () => {
   const handleSubmit = async () => {
     const userAutenticado = await aprovarLogin(form.email, form.senha);
     if (userAutenticado) {
-      navigate('/');
+      navigate('/on');
     }
   };
 

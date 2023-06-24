@@ -58,5 +58,11 @@
     "dataNascimento": "02/04/1997",
     "email": "usuario10@example.com",
     "senha": "senha1234567890"
+  },
+  {
+    "nome": "Fabiana Furtado",
+    "dataNascimento": "10/02/1980",
+    "email": "fabiana.furtado@email.com",
+    "senha": "fojguf-xYxmi8-fontaw"
   }
 ]
