@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom';
 import HomePage from '../pages/homePage/homePage';
 import CadastroV2 from '../pages/cadastro/cadastro';
 import TriagemPage from '../pages/triagem/triagemPage';
@@ -8,7 +8,7 @@ import HomePageOn from '../pages/homePage/homePageOn';
 
 function AppRoutes() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/on' element={<HomePageOn />} />
@@ -16,7 +16,7 @@ function AppRoutes() {
         <Route path='/triagem' element={<TriagemPage />} />
         <Route path='/login' element={<LoginPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
