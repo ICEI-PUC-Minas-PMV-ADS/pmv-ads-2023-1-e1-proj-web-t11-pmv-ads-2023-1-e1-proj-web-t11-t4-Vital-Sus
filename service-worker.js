@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus/precache-manifest.856fd8a96d493ed5f56c2fba6f4b4c20.js"
+  "/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus/precache-manifest.ac214fff15237c2c8977641a2542e447.js"
 );
 
 workbox.clientsClaim();

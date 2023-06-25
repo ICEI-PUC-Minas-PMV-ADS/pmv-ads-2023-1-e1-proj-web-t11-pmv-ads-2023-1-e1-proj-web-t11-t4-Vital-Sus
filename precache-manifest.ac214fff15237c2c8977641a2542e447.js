@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cdabbb03347b2ac973f7",
+    "revision": "57d07a49bdcbf7625549",
     "url": "/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus/static/css/main.e3bf0ba7.chunk.css"
   },
   {
-    "revision": "cdabbb03347b2ac973f7",
-    "url": "/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus/static/js/main.5ba3a5c9.chunk.js"
+    "revision": "57d07a49bdcbf7625549",
+    "url": "/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus/static/js/main.80d4f780.chunk.js"
   },
   {
     "revision": "694810c356aa34e650c5",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus/static/js/2.66861f09.chunk.js"
   },
   {
-    "revision": "8ffd4ae282e5bf7a72c0d0abaf9934e2",
+    "revision": "c99a005e76e2eb973133636c3131f47d",
     "url": "/pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus/index.html"
   }
 ];
