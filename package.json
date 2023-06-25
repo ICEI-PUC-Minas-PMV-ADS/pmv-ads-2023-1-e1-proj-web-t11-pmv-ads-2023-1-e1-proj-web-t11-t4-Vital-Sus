@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pmv-ads-2023-1-e1-proj-web-t11-pmv-ads-2023-1-e1-proj-web-t11-t4-Vital-Sus.github.io",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -30,7 +31,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write \"src/**/*.{ts,tsx}\""
+    "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.8"
   }
 }
