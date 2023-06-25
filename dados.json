@@ -1,0 +1,68 @@
+[
+  {
+    "nome": "Usuário 1",
+    "dataNascimento": "01/02/1990",
+    "email": "usuario1@example.com",
+    "senha": "senhaSegura123"
+  },
+  {
+    "nome": "Usuário 2",
+    "dataNascimento": "05/06/1985",
+    "email": "usuario2@example.com",
+    "senha": "outraSenhaSegura"
+  },
+  {
+    "nome": "Usuário 3",
+    "dataNascimento": "10/11/1992",
+    "email": "usuario3@example.com",
+    "senha": "maisUmaSenhaSegura"
+  },
+  {
+    "nome": "Usuário 4",
+    "dataNascimento": "15/04/1988",
+    "email": "usuario4@example.com",
+    "senha": "senhaProtegida123456"
+  },
+  {
+    "nome": "Usuário 5",
+    "dataNascimento": "20/09/1995",
+    "email": "usuario5@example.com",
+    "senha": "outraSenhaProtegida123"
+  },
+  {
+    "nome": "Usuário 6",
+    "dataNascimento": "12/07/1990",
+    "email": "usuario6@example.com",
+    "senha": "senhaSuperSegura"
+  },
+  {
+    "nome": "Usuário 7",
+    "dataNascimento": "08/03/1986",
+    "email": "usuario7@example.com",
+    "senha": "senha123456789"
+  },
+  {
+    "nome": "Usuário 8",
+    "dataNascimento": "25/11/1993",
+    "email": "usuario8@example.com",
+    "senha": "outraSenha12345"
+  },
+  {
+    "nome": "Usuário 9",
+    "dataNascimento": "19/06/1989",
+    "email": "usuario9@example.com",
+    "senha": "senhaSegura987654"
+  },
+  {
+    "nome": "Usuário 10",
+    "dataNascimento": "02/04/1997",
+    "email": "usuario10@example.com",
+    "senha": "senha1234567890"
+  },
+  {
+    "nome": "Fabiana Furtado",
+    "dataNascimento": "10/02/1980",
+    "email": "fabiana.furtado@email.com",
+    "senha": "fojguf-xYxmi8-fontaw"
+  }
+]
